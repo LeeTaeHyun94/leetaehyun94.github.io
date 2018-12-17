@@ -94,5 +94,4 @@ function generateContent() {
     } else {
         $('#content .content-text').html('<ul>' + $('#markdown-toc').html() + '</ul>');
     }
-    console.log("myAffix!!!");
 }
