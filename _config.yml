@@ -1,5 +1,5 @@
 # Site settings
-title: leethyun's Personal Website
+title: leethyun's Blog
 email: leethw@naver.com
 description: leethyun's Ideas & Blogs
 # > # this means to ignore newlines until "baseurl:"
@@ -18,7 +18,7 @@ viewsourceroot: https://github.com/LeeTaeHyun94/leetaehyun94.github.io/blob/mast
 newsourceroot: https://github.com/LeeTaeHyun94/leetaehyun94.github.io/new/master
 #########################################
 # disqus.com commenting system.
-disqus_shortname: leethw94
+disqus_shortname: leetaehyun94.github.io
 disqus_url: "http://leetaehyun94.github.io"
 #########################################
 
