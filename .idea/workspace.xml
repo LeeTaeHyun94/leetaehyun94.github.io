@@ -2,99 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63138770-a99f-474a-9c8c-2e974526993b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/downloads/2.0.ParaEngine.and.NPL.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloads/2.3.ParaEngine.and.NPL.in.Game.paper.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloads/DisGameEngineThesis.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/downloads/DisGameEngineVol1_review.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/2col_leftNav.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/Apply/chron CV.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/Apply/nostalgia.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/Apply/website friends.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/Apply/website intro.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/Apply/website publications.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/Apply/website research.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/Apply/website thoughts.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/GameIntro.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/GameIntroOutline.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/Templates/concise.dwt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/Templates/introduction.dwt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/Templates/thoughts.dwt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/_notes/2col_leftNav.css.mno" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/cv.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/A general research and outlook of MAS.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/Archi_ParaEngine.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/Archi_ParaEngine_I3D05.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/CV.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/DFMA_Revised.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/DHCI_hcii05.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/EduTech.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/EduTech.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/FrameRateControl.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/GameEngineAndWeb3D.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/HCITemplate.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/Human Anim.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/LiXizhi_PS.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/LiXizhi_SOP.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/MicroWinForVC.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/MyGREessays.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/NPLinGame.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/Quick interactive tutorial.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/ReportSRMAS.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/ResearchGallery.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/WAF_interface.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/_notes/colors.dfv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/DirRobot.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/NNSim.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/NotesEditorAgent.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/PlaneView.msi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/mani.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/manisrc.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/math3d.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/mathsrc.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/reader.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/sup3dsrc.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/super3d.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/tetris.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/tetsrc.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/before2001/thunder2002.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/lix_game.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/research gallery.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/scim-tables-0.4.3.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/download/xizhil_ecomips.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/en/images/game1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/en/images/game2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/en/images/game3.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/en/images/game4.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/en/images/game5.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/friend.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/Dirbot.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/POL1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/ParaEngine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/RobotA.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/WAF.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/WAF002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/ecomips.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/funding.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/lixizhi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/mani.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/math3d.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/planeplot.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/spacer.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/starNPL.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/thunder3d.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/images/windvd.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/index.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/indexApply.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/manage.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/project1990.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/projects.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/publications.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/research.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/thoughts.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldsite2005/thoughts/index.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/page.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -125,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
@@ -134,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feed.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_layouts/page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+            <state relative-caret-position="285">
+              <caret line="15" column="93" selection-start-line="15" selection-start-column="93" selection-end-line="15" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -209,6 +117,7 @@
       <find>site</find>
       <find>bg</find>
       <find>gener</find>
+      <find>baidu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,6 +132,7 @@
         <option value="$PROJECT_DIR$/pages/1_projects.md" />
         <option value="$PROJECT_DIR$/static/css/index.css" />
         <option value="$PROJECT_DIR$/static/js/index.js" />
+        <option value="$PROJECT_DIR$/_layouts/page.html" />
       </list>
     </option>
   </component>
@@ -301,12 +211,12 @@
       <option name="presentableId" value="Default" />
       <updated>1545048818426</updated>
       <workItem from="1545048820346" duration="43000" />
-      <workItem from="1545048948471" duration="3042000" />
+      <workItem from="1545048948471" duration="3288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3085000" />
+    <option name="totallyTimeSpent" value="3331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -428,6 +338,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="93" selection-start-line="15" selection-start-column="93" selection-end-line="15" selection-end-column="93" />
         </state>
       </provider>
     </entry>
