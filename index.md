@@ -2,4 +2,4 @@
 layout: frontpage
 ---
 
-## Welcome to my blog
+## Welcome to leethyun's blog
