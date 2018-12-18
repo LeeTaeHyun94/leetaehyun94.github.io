@@ -7,9 +7,68 @@ permalink: /about/
 
 * content
 {:toc}
+## About me
+
+- Name : Tae-hyun Lee
+- Email : leethw@naver.com
+- Github : https://github.com/LeeTaeHyun94
+- Blog : https://leetaehyun94.github.io
+
+My primary research interest is in programming and back-end. See my project page for details.
+
+### 1. Education
+
+- 2013.03 ~ ing : studying a bachelor's degree in Computer Information Engineering (The Catholic University of Korea)
+
+### 2. Career
+
+- 2016.12 ~ 2017.12 : Research Assistant in Intelligent System lab. (The Catholic University of Korea)
+- 2018.09 ~ ing : Research Assistant in Algorithm lab. (The Catholic University of Korea)
+
+### 3. Skill
+
+- Back-End
+  - Java
+  - JSP & Servlet
+  - Spring / Spring boot
+    - Hibernate / SpringDataJPA
+    - MyBatis
+    - Build Tool : Maven / Gradle
+  - C#
+  - Node.JS
+    - Express Framework
+    - mongoose
+- Front-End
+  - C# & WPF
+  - Bootstrap (JQuery + Javascript)
+  - React
+  - Android (Java)
+- Database
+  - MySQL
+  - Oracle DBMS
+  - mongoDB
+- Infra
+  - AWS
+- Algorithm (Problem Solving)
+  - C, C++
+  - Data Structure
+  - BOJ : leethyun
+  - Algospot : leet
+
+### 4. Awards & Antecedents
+
+- 2017 산업융합 아이디어 공모전 대상
+- 2017 가톨릭대학교 교내 창업 아이디어 공모전 우수상
+- 2017 가톨릭대학교 교내 프로그래밍 대회(ACM-ICPC 온라인 예선) 은상
+- 2017 가톨릭대학교 컴퓨터정보공학부 학술제 프로그래밍 대회 2등
+- 2018 SCPC(Samsung Collegiate Programming Cup) 본선 진출
+- 2018 디지털 과거 Code + 본선 진출
+- 2018 Edaily Coding Challenge 본선 38등
+- 2018 가톨릭대학교 컴퓨터정보공학부 학술제 프로그래밍 대회 1등
 
 ## About the site
-This is a personal website of leethyun, created with github and jekyll. 
+
+This is a personal website of leethyun, created with github and jekyll.
 Create your own website is as easy as clone or fork a [template](https://github.com/LeeTaeHyun94/leetaehyun94.github.io) on github, and [commit](http://jekyllrb.com/docs/posts/) to `_posts` folder. 
 
 ### Admin tools
@@ -39,10 +98,3 @@ local function main()
 	print("hello world everyone")
 end
 {% endhighlight %}
-
-
-## About me
-
-My primary research interest is in programming and back-end. See my project page for details.
-
-
