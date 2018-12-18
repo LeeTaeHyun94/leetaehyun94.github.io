@@ -13,6 +13,7 @@ permalink: /about/
 - Email : leethw@naver.com
 - Github : https://github.com/LeeTaeHyun94
 - Blog : https://leetaehyun94.github.io
+- Get My Portfolio! : ![leethyun's Portfolio](./downloads/이태현 Portfolio.PPTX)
 
 My primary research interest is in programming and back-end. See my project page for details.
 
