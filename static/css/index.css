@@ -3,9 +3,9 @@
  */
 /* commom */
 body {
-	background-image: url(./../img/bg.jpg);
+	background-image: url(./../img/bg.png);
 	background-repeat: repeat;
-	background-size: 35%;
+	background-size: 25%;
     font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
 }
 article p{
