@@ -4,6 +4,10 @@
 /* commom */
 body {
 	background-image: url(./../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
     font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
 }
 article p{
