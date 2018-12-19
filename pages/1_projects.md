@@ -9,13 +9,57 @@ permalink: /projects/
 {:toc}
 
 # All my projects
-Following are projects started by me. 
+Following are projects started by me.
 
-## NPL project
-* Started: 2004-present
-* Website: [www.nplproject.com](http://www.nplproject.com)
-   * NPL Code Wiki
-   * NPL language service and debugger
+[Project Portfolio](./downloads/이태현 Portfolio.PPTX)
 
-NPL(Neural Parallel Language) is a new programming language. It was started as my exploration of coding logics in a networked environment.    
-Throughout the years, I have written over a million lines of code with it. All my other projects since 2005 is written in it. 
+## Electronic Warfare Simulator
+* 2016.12 ~ 2017.12
+* Ladar System
+* Tracking & Estimating enemies’ position
+* Machine Learning : Weka (Java)
+   * Supervised Learning
+      * Artificial Neural Network
+      * Decision Tree
+      * Naive Bayes
+   * Unsupervised Learning : Clustering
+* Display Position : Matlab
+* Window Application : C# & WPF
+* Concept : MVVM Pattern
+
+## Todo List
+
+- Todo List Web page
+- Back-end : Spring boot + JPA
+- Front-end : Bootstrap (HTML + JQuery + Javascript)
+- Database : MySQL
+
+## Little Cloud
+
+- Messenger Window Application
+- Sending, Receiving File
+- File Cloud Service
+- Back-end : C#
+- Window Application : C# & WPF
+- Database : MySQL
+- Concept : MVVM Pattern
+
+## CUKIN
+
+- Question & Answer Community Web page
+- Back-end : JSP & Servlet, Apache Tomcat
+- Front-end : Bootstrap (HTML + JQuery + Javascript)
+- Database : MySQL
+- Concept : MVC Pattern
+
+## Virtual Reality Media Platform (Not Completed)
+
+- Utility Application : C# & WPF
+- VR Contents : Unity & C#
+- Stopped...
+
+## 우리 지금 만나
+
+- Meeting place curation service
+- Android Application : Java (Eclipse ADT)
+- Google Map API
