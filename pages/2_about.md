@@ -13,7 +13,7 @@ permalink: /about/
 - Email : leethw@naver.com
 - Github : https://github.com/LeeTaeHyun94
 - Blog : https://leetaehyun94.github.io
-- Get My Portfolio! : [leethyun's Portfolio](./downloads/이태현 Portfolio.PPTX)
+- Get My Portfolio! : [leethyun's Portfolio](./../downloads/이태현 Portfolio.PPTX)
 
 My primary research interest is in Software Engineering, Back-end and Algorithm.
 
@@ -57,6 +57,8 @@ See my project page for details.
   - Data Structure
   - BOJ : leethyun
   - Algospot : leet
+- Concepts
+  - OOA, OOD, TDD, UML, Design Patterns, Networking
 
 ### 4. Awards & Antecedents
 
