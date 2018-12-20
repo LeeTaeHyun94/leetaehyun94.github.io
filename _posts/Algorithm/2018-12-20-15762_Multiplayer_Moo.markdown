@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "BOJ 15762 Multiplayer Moo"
+title:  "[BOJ 15762] Multiplayer Moo"
 date:   2018-12-20 21:00:00
 categories: Algorithm
 comments: true
 ---
-# [BOJ 15762] Multiplayer Moo
-
 [[BOJ 15762] Multiplayer Moo](https://www.acmicpc.net/problem/15762)
 
 오늘 포스팅하는 문제는 며칠 전부터 코딩에 대한 아이디어 때문에 굉장히 고민을 오래한 문제이다.
