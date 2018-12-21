@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "[BOJ 2580] 스도쿠"
+date:   2018-12-21 21:00:00
+categories: Algorithm
+comments: true
+---
+[[BOJ 2580] 스도쿠](https://www.acmicpc.net/problem/2580)
+
+## 문제 요약
+
+스도쿠 게임 규칙에 따라 빈 칸으로 주어지는 칸들에 알맞는 숫자들을 채워야 한다.
+
+## 풀이
+
+어렵지 않은 완전탐색 문제라고 생각했다.
+
+1. 가지 치기 - 각 범위(행, 열, 3X3)에 있는 숫자들을 기록하여 빈 칸에 넣을 숫자들을 골라주어야 한다.
+2. 숫자를 체크하는 방법
+3. 기저 조건
+
+세 가지 부분에 유의한다면 어렵지 않은 완전탐색 문제..
+
+필자는 코딩을 못해서 많이 틀리고 오래 걸렸다...ㅠㅠ
+
+## 코드
+
+```C++
+#include<cstdio>
+int b[9][9], dx[] = { 0,3,6,9 }, dy[] = { 0,3,6,9 }, cnt;
+bool c[9][9][10];
+bool go(int x, int y, int zero) {
+	for (int i = 1; i < 10; i++) c[y][x][i] = 0;
+	for (int i = 0; i < 9; i++) c[y][x][b[i][x]] = 1, c[y][x][b[y][i]] = 1;
+	int xd = x / 3, yd = y / 3;
+	for (int i = dy[yd]; i < dy[yd + 1]; i++)
+		for (int j = dx[xd]; j < dx[xd + 1]; j++)
+			c[y][x][b[i][j]] = 1;
+	bool n = 1;
+	for (int i = 1; i < 10; i++) {
+		if (!c[y][x][i]) {
+			b[y][x] = i;
+			n = 0;
+			bool t = 1;
+			for (int j = 0; j < 9 && t; j++) {
+				for (int k = 0; k < 9 && t; k++) {
+					if (!b[j][k]) {
+						t = go(k, j, zero - 1);
+						if (t) return 1;
+					}
+				}
+			}
+			if (t) return 1;
+			b[y][x] = 0;
+		}
+	}
+	if (n) return 0;
+}
+int main() {
+	for (int i = 0; i < 9; i++) for (int j = 0; j < 9; j++) {
+		scanf("%d", &b[i][j]);
+		if (b[i][j] == 0) cnt++;
+	}
+	for (int i = 0; i < 9; i++)
+		for (int j = 0; j < 9; j++)
+			if (!b[i][j]) go(j, i, cnt);
+	for (int i = 0; i < 9; i++) {
+		for (int j = 0; j < 9; j++) printf("%d ", b[i][j]);
+		puts("");
+	}
+	return 0;
+}
+```
