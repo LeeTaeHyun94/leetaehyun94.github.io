@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "[BOJ 15760] Out of Sorts"
+date:   2018-12-23 21:00:00
+categories: Algorithm
+comments: true
+---
+[[BOJ 15760] Out of Sorts](https://www.acmicpc.net/problem/15760)
+
+쉬운 문제임이 분명했지만 분석하고 알고리즘을 생각하는 것만으로도 오랜 시간이 걸렸다.
+
+문제를 많이 안 풀은 티가 확실히 난다.
+
+## 문제 요약
+
+어떤 배열을 정렬할 때, bubble sort를 이용한다면 총 몇 회의 bubble이 일어날 것인가?
+
+## 풀이
+
+풀이는 생각보다 간단하다.
+
+bubble sort의 매 시퀀스마다 최소 하나 이상의 숫자가 제자리를 찾는 것은 자명하다.
+
+때문에 문제에 주어진 로직에 따라 오름차순으로 정렬하는 과정을 잘 분석해보면,
+
+현재, 자신의 위치보다 뒤 쪽에 위치하는 숫자들이 제자리를 찾기 위해 매 시퀀스마다 한 칸 씩 움직이는 형태를 발견할 수 있다.
+
+그리고 한 번의 bubble마다 여러 개의 숫자들이 한 번에 움직일 수 있으므로,
+
+그러한 숫자들 중 가장 많은 칸을 움직여야 하는 숫자의 움직임 횟수가 bubble 횟수가 된다.
+
+## 코드
+
+```C++
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int N, ans;
+pair<int, int> n[100000];
+int main() {
+	scanf("%d", &N);
+	for (int i = 0, x; i < N; i++) scanf("%d", &x), n[i] = { x, i };
+	sort(n, n + N);
+	for (int i = 0; i < N; i++)
+		if (i < n[i].second) ans = max(ans, n[i].second - i);
+	printf("%d", ans + 1);
+	return 0;
+}
+```
