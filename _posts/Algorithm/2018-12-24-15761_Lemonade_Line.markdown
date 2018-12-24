@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "[BOJ 15761] Lemonade Line"
+date:   2018-12-23 21:00:00
+categories: Algorithm
+comments: true
+---
+[[BOJ 15761] Lemonade Line](https://www.acmicpc.net/problem/15761)
+
+쉬운 문제이지만 해석하는 시간을 줄일 필요가 있다.
+
+## 문제 요약
+
+소들이 레모네이드를 받기 위해 줄을 서는데 각자 최대 몇 마리의 소를 기다릴 수 있는지에 대한 값이 w로 주어진다.
+
+이 때, 레모네이드를 가장 적게 소비하는 경우(최악의 경우)에 몇 마리의 소들이 레모네이드를 받을 수 있는가를 구하는 문제
+
+## 풀이
+
+기다릴 수 있는 마릿수가 많을수록 앞에 세운다고 생각하면 최악의 경우라는 것을 알 수 있다.
+
+## 코드
+
+```C++
+#include<cstdio>
+#include<algorithm>
+using namespace std;
+int N, ans, n[100000];
+int main() {
+	scanf("%d", &N);
+	for (int i = 0; i < N; i++) scanf("%d", &n[i]);
+	sort(n, n + N);
+	for (int i = N - 1; n[i] >= ans && i >= 0; i--, ans++);
+	printf("%d", ans);
+	return 0;
+}
+```
