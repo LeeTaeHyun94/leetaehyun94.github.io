@@ -9,4 +9,4 @@ comments: true
 
 - 실행 환경에 따라 별도의 컴파일을 하지 않아도 모든 실행 환경에서 JVM만 있다면 실행할 수 있게 하기 위함.
 - JIT Compile (Just-In-Time Compile) : 프로그램을 실제 실행하는 시점에 기계어로 번역하는 컴파일 기법
-- ![test]({{page.viewsourceroot}}/_posts/img/1.PNG)
+- ![test](./img/1.PNG)
