@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Java의 실행 과정"
+date:   2018-12-25 21:00:00
+categories: Java
+comments: true
+---
+자바 프로그램(.java)을 클래스 파일(.class)로 컴파일 (Byte Code 생성)하여 JVM 명령으로 변환하여 JVM에서는 JIT 컴파일을 통해 기계어로 컴파일한다.
+
+- 실행 환경에 따라 별도의 컴파일을 하지 않아도 모든 실행 환경에서 JVM만 있다면 실행할 수 있게 하기 위함.
+- JIT Compile (Just-In-Time Compile) : 프로그램을 실제 실행하는 시점에 기계어로 번역하는 컴파일 기법
