@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63138770-a99f-474a-9c8c-2e974526993b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/2018-12-25-Java의 실행 과정.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Java/2018-12-25-Java의 실행 과정.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/10.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/11.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/12.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/13.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/14.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/15.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/16.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/4.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/5.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/6.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/7.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/8.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Java/img/9.PNG" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="83" lean-forward="true" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
+            <state relative-caret-position="304">
+              <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -263,12 +245,12 @@
       <workItem from="1545137617732" duration="1171000" />
       <workItem from="1545195973840" duration="4289000" />
       <workItem from="1545373406786" duration="21000" />
-      <workItem from="1545735131227" duration="1901000" />
+      <workItem from="1545735131227" duration="2032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11361000" />
+    <option name="totallyTimeSpent" value="11492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -427,8 +409,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="83" lean-forward="true" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
+        <state relative-caret-position="304">
+          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
         </state>
       </provider>
     </entry>
