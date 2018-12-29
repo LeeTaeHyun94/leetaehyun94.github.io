@@ -13,6 +13,7 @@ comments: true
     - ![Web Server](./../../assets/Java/8.PNG)
 - Process는 자신만의 데이터를 갖고 Thread는 동일한 하나의 데이터를 공유한다.
 - 스레드는 하나의 프로세스 안에 존재한다.
+
 ```java
 class Horse extends Thread {
     private String name;
