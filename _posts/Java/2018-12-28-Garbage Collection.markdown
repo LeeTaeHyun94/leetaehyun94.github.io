@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Garbage Collection"
-date:   2018-12-28 23:30:00
+date:   2018-12-28 20:00:00
 categories: Java
 comments: true
 ---

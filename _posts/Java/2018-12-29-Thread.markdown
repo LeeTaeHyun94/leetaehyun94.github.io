@@ -1,0 +1,257 @@
+---
+layout: post
+title:  "Thread"
+date:   2018-12-29 23:30:00
+categories: Java
+comments: true
+---
+- Multi-tasking
+    - 여러 개의 어플리케이션을 동시에 실행해서 컴퓨터 시스템의 성능을 높이기 위한 기법
+    - 운영체제가 CPU의 시간을 쪼개서 각 작업에 할당하여 작업들이 동시에 수행되는 것처럼 보이게 한다.
+- Multi-threading : 하나의 프로그램이 동시에 여러 작업을 할 수 있도록 하는 것
+    - ![Thread](./../../assets/Java/7.PNG)
+    - ![Web Server](./../../assets/Java/8.PNG)
+- Process는 자신만의 데이터를 갖고 Thread는 동일한 하나의 데이터를 공유한다.
+- 스레드는 하나의 프로세스 안에 존재한다.
+```java
+class Horse extends Thread {
+    private String name;
+    private int pos;
+
+    public Horse(String name) {
+        this.name = name;
+    }
+
+    public void run() {
+        golloc();
+    }
+
+    public void golloc() {
+        for (int  i = 0; i <= 10; i++) {
+            pos = pos + (int)(Math.random() * 100);
+            System.out.println(name + " : " + pos);
+        }
+    }
+}
+
+public class Test01 {
+    public static void main(String[] args) {
+        Horse h1 = new Horse("1번말");
+        Horse h2 = new Horse("2번말");
+        Horse h3 = new Horse("3번말");
+        h1.start();
+        h2.start();
+        h3.start();
+    }
+}
+```
+- Thread Scheduling
+    - CPU 스케줄링에 의하여 하나의 CPU를 여러 스레드가 나누어 사용하기 때문에 하나의 CPU를 여러 스레드가 나누어 쓰기 위해 스레드 실행 순서를 결정하는 스레드 스케줄링이 필요하다.
+    - Java Runtime System에서는 우선순위 스케줄링을 이용
+    - Scheduler는 현재 실행 가능한 스레드 중에서 우선순위가 가장 높은 스레드를 먼저 실행한다.
+    - Method
+        - sleep() : ms 단위로 스레드를 쉬게 할 수 있으며, 스레드가 수면 상태에서 interrupt되면 InterruptedException이 발생한다.
+            - CPU의 시간을 다른 스레드에게 넘겨주는 효율적인 방법
+            - 다른 스레드와 보조를 맞추는 용도로 사용될 수 있음
+            - ms, ns 단위로 지정할 수 있다.
+        - join() : 해당 스레드가 소멸될 때까지 기다리게 한다.
+        - yield() : CPU를 다른 스레드에게 양보하는 메소드, 동일한 우선순위를 갖고 있는 다른 스레드를 실행시키고자 할 때 사용한다.
+    - Interrupt : 하나의 스레드가 실행하고 있는 작업을 중지하도록 하는 메커니즘
+- Thread State
+    - ![Thread State](./../../assets/Java/9.PNG)
+    - 생성 상태
+        - Thread 클래스를 이용하여 새로운 스레드를 생성
+        - start() : 생성된 스레드를 시작
+        - stop() : 생성된 스레드를 정지
+    - 실행 가능 상태 : 스레드가 스케줄링 큐에 넣어지고 스케줄러에 의해 우선순위에 따라 실행
+    - 실행 중지 상태
+        - 실행 가능 상태 - > 실행 중지 상태
+            - 현재 스레드나 다른 스레드가 suspend()를 호출
+            - 현재 스레드가 wait()을 호출
+            - 현재 스레드가 sleep()을 호출
+            - 현재 스레드가 입출력 작업을 하기 위해 대기하는 경우
+- Synchronization (동기화)
+    - 스레드는 동일한 데이터를 공유하기 때문에 매우 효율적으로 작업할 수 있으나, 스레드 간섭, 메모리 일치 오류 문제가 발생할 수 있다.
+    - 동기화 : 공유된 메모리의 불일치가 나타나는 현상을 방지하는 방법으로 한 번에 하나의 스레드만이 공유 데이터에 접근할 수 있도록 제어하는 것이 필요하다.
+    - 공유된 자원 중에서 동시에 사용하면 안 되는 자원(임계영역)을 보호하는 방법
+    - 동기화 메소드와 동기화 블록 두 가지 방법이 있다.
+        - 동기화 블록을 이용하면 동기화의 대상이 되는 영역(임계영역)을 세밀하게 제한할 수 있다.
+            ```java
+            synchronized(this) {}
+            // 여기서는 this가 동기화의 대상이 된다.
+            // 메소드가 호출된 인스턴스 자신을 대상으로 동기화한다는 의미.
+            // 매개변수에 동기화의 대상으로 지정할 것을 전달하면 된다.
+            ```
+        ```java
+        class Ex1 implements Runnable {
+            private StringBuffer buffer = new StringBuffer();
+        
+            @Override
+            public void run() {
+                doA();
+            }
+        
+            public void doA() {
+                for (int i = 0; i < 5; i++) {
+                    buffer.append(Thread.currentThread().getName());
+                    System.out.println(buffer);
+                    try {
+                        Thread.sleep(1000);
+                    }
+                    catch (InterruptedException e) {}
+                }
+            }
+        }
+        
+        public class Test02 {
+            public static void main(String[] args) {
+                Ex1 obj = new Ex1();
+                Thread t0 = new Thread(obj, "A");
+                Thread t1 = new Thread(obj, "B");
+                Thread t2 = new Thread(obj, "C");
+                t0.start();
+                t1.start();
+                t2.start();
+            }
+        }
+        // 임계영역 지정 전에는 우선순위에 따라 스레드가 실행되었다.
+        ```
+        ```java
+        class Ex1 implements Runnable {
+            private StringBuffer buffer = new StringBuffer();
+        
+            @Override
+            public void run() {
+                doA();
+            }
+        
+            public void doA() {
+                synchronized (buffer) {
+                    for (int i = 0; i < 5; i++) {
+                        buffer.append(Thread.currentThread().getName());
+                        System.out.println(buffer);
+                        try {
+                            Thread.sleep(1000);
+                        }
+                        catch (InterruptedException e) {}
+                    }
+                }
+            }
+        }
+        
+        public class Test02 {
+            public static void main(String[] args) {
+                Ex1 obj = new Ex1();
+                Thread t0 = new Thread(obj, "A");
+                Thread t1 = new Thread(obj, "B");
+                Thread t2 = new Thread(obj, "C");
+                t0.start();
+                t1.start();
+                t2.start();
+            }
+        }
+        // 임계영역 지정 후에는 하나의 스레드의 실행이 끝난 후 다음 스레드를 실행한다.
+        ```
+- 스레드 간의 조정
+    - 두 개의 스레드가 데이터를 주고 받는 경우에 발생한다.
+    - Polling : 조건을 반복문에서 무한정 기다리게 하는 것 (즉, 조건이 만족되지 않는다면 무한 루프 상태)
+        ```java
+        public void badMethod() {
+            while (!condition) {}
+        }
+        // CPU 시간을 엄청나게 낭비하므로 가급적 피해야 할 코드
+        ```
+    - Event-driven : 조건이 만족될 때까지 현재 스레드를 일시 중지시킨다.
+        ```java
+        public synchronized goodMethod() {
+            while (!condition) {
+                try {
+                    wait(); // 이벤트가 발생할 때까지 기다린다. 하지만 이벤트가 발생하면 깨어나서 다시 조건을 체크한다.
+                }
+                catch (InterruptedException e) {}
+            }
+        }
+        ```
+    - wait() : 이벤트가 일어나기를 기다릴 때 사용
+    - notify() : 이벤트가 일어났을 때, wait() 메소드를 통해 블로킹 상태에 놓여 있는 스레드 하나를 깨운다.
+    - notifyAll() : 이벤트가 일어났을 때, wait() 메소드를 통해 블로킹 상태에 놓여 있는 모든 스레드를 깨운다.
+- 생산자/소비자 문제
+    - 생산자는 데이터를 생산하고, 소비자는 데이터를 갖고 어떤 작업을 수행
+    - 생산자가 생산하기 전에 소비자는 물건을 가져가면 안 된다.
+    - 생산된 물건이 있다면 소비하기 전에 물건을 생산할 수 없다.
+    - -> 동기화된 메소드를 사용하여 두 개의 스레드가 동시에 객체에 접근하는 것을 막는다.
+    - 스레드 간의 동작을 일치시키기 위하여 wait(), notify() 메소드를 통해 생산되었다는 사실을 소비자가 알 수 있고, 소비되었다는 사실이 생산자가 알 수 있도록 한다.
+    - ![Product & Consumer Example](./../../assets/Java/10.PNG)
+    ```java
+    class Producer extends Thread {
+        private Buffer blank;
+    
+        public Producer(Buffer blank) {
+            this.blank = blank;
+        }
+    
+        public void run() {
+            for (int i = 0; i < 10; i++) {
+                blank.put(i);
+                try {
+                    Thread.sleep(300);
+                }
+                catch (InterruptedException e) {}
+            }
+        }
+    }
+    
+    class Consumer extends Thread {
+        private Buffer blank;
+    
+        public Consumer(Buffer blank) {
+            this.blank = blank;
+        }
+    
+        public void run() {
+            int value = 0;
+            for (int i = 0; i < 10; i++) value = blank.get();
+        }
+    }
+    
+    class Buffer {
+        private int contents;
+        private boolean available = false;
+    
+        public synchronized int get() {
+            while (!available) {
+                try {
+                    wait();
+                }
+                catch (InterruptedException e) {}
+            }
+            System.out.println("소비자 : " + contents + " 소비");
+            notify();
+            available = false;
+            return contents;
+        }
+    
+        public synchronized void put(int value) {
+            while (available) {
+                try {
+                    wait();
+                }
+                catch (InterruptedException e) {}
+            }
+            contents = value;
+            System.out.println("생산자 : " + contents + " 생산");
+            notify();
+            available = true;
+        }
+    }
+    
+    public class Main {
+        public static void main(String[] args) {
+            Buffer c = new Buffer();
+            Producer p1 = new Producer(c);
+            Consumer c1 = new Consumer(c);
+            p1.start();
+            c1.start();
+        }
+    }
+    ```
