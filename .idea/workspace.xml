@@ -43,8 +43,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/Java/2018-12-29-Thread.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="268">
-                <caret line="204" column="5" lean-forward="true" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
+              <first_editor relative-caret-position="420">
+                <caret line="243" column="13" lean-forward="true" selection-start-line="243" selection-start-column="13" selection-end-line="243" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -242,12 +242,12 @@
       <workItem from="1545373406786" duration="21000" />
       <workItem from="1545735131227" duration="2103000" />
       <workItem from="1546083948695" duration="8887000" />
-      <workItem from="1546100885800" duration="3159000" />
+      <workItem from="1546100885800" duration="3226000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23609000" />
+    <option name="totallyTimeSpent" value="23676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -452,8 +452,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/Java/2018-12-29-Thread.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="268">
-            <caret line="204" column="5" lean-forward="true" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
+          <first_editor relative-caret-position="420">
+            <caret line="243" column="13" lean-forward="true" selection-start-line="243" selection-start-column="13" selection-end-line="243" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>

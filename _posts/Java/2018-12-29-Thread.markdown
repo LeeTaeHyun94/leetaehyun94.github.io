@@ -185,6 +185,7 @@ public class Test01 {
     - -> 동기화된 메소드를 사용하여 두 개의 스레드가 동시에 객체에 접근하는 것을 막는다.
     - 스레드 간의 동작을 일치시키기 위하여 wait(), notify() 메소드를 통해 생산되었다는 사실을 소비자가 알 수 있고, 소비되었다는 사실이 생산자가 알 수 있도록 한다.
     - ![Product & Consumer Example](./../../assets/Java/10.PNG)
+    
     ```java
     class Producer extends Thread {
         private Buffer blank;
