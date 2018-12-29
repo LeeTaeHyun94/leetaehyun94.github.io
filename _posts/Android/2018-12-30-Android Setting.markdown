@@ -24,6 +24,7 @@ Android 개발 환경설정은 Android Studio를 설치해서 GUI를 이용하�
     - 시스템 변수 추가 : 이름은 ANDROID_HOME, 값은 Android SDK 폴더로 지정
     - 사용자 변수 or 시스템 변수 Path에 %ANDROID_HOME%\tools\bin, %ANDROID_HOME%\emulator 추가
 
+---
 ## 2. 원하는 Package 설치
 - sdkmanager --list : 설치된 패키지와 설치 가능한 패키지의 목록을 확인
 - sdkmanager [패키지명] : 해당 패키지를 설치
@@ -40,6 +41,7 @@ sdkmanager build-tools;27.0.0
 sdkmanager platforms;android-27
 sdkmanager system-images;android-27;default;x86_64
 ```
+---
 ## 3. AVD 설정
 - avdmanager create avd -n [디바이스 이름] -k "[디바이스에 사용될 안드로이드 버전 패키지]" --device "[디바이스 종류]" : AVD 생성
 - avdmanager delete avd -n [디바이스 이름] : 해당 AVD 삭제
@@ -50,10 +52,11 @@ sdkmanager system-images;android-27;default;x86_64
 avdmanager create avd -n test -k "system-images;android-27;default;x86_64" --device "Nexus 5X"
 avdmanager delete avd -n test
 ```
+---
 ## 4. AVD Emulator 실행
 - emulator -list-avds : 현재 사용 가능한 AVD 목록 조회
 - emulater -avd [디바이스 이름] : 해당 AVD Emulator 가동
-
+---
 ## 5. Enable Keyboard
 이 포스팅에 나온대로 Android Emulator Setting을 하게 되면 Keyboard로 입력이 불가능하기 때문에 설정을 추가해줘야 한다.
 
