@@ -7,7 +7,9 @@ comments: true
 ---
 ! 이 포스팅에서는 React Native App 개발을 위해서 Command Line Tool을 이용하여 Package 설치와 AVD Emulator 세팅까지만 기록되어 있습니다.
 
-! JDK 설치 먼저 하고 봐주시면 감사하겠습니다. 
+! JDK 설치 먼저 하고 봐주시면 감사하겠습니다.
+
+--- 
 ## 1.  안드로이드 설치
 Android 개발 환경설정은 Android Studio를 설치해서 GUI를 이용하여 편하게 할 수 있지만 단지 SDK와 AVD Manager 역할만을 위해서 Android Studio를 깔고 싶지 않은 사람들을 위한 방법입니다.
 
