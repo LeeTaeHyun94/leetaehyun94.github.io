@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63138770-a99f-474a-9c8c-2e974526993b" name="Default Changelist" comment="" />
+    <list default="true" id="63138770-a99f-474a-9c8c-2e974526993b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/_posts/Android/2018-12-30-Android Setting.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Android/2018-12-30-Android Setting.markdown" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/Android/2018-12-30-Android Setting.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="724">
-                <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+              <first_editor relative-caret-position="211">
+                <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               </first_editor>
               <second_editor />
             </state>
@@ -178,12 +180,12 @@
       <workItem from="1545195973840" duration="4289000" />
       <workItem from="1545373406786" duration="21000" />
       <workItem from="1545735131227" duration="2103000" />
-      <workItem from="1546083948695" duration="6990000" />
+      <workItem from="1546083948695" duration="7296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18553000" />
+    <option name="totallyTimeSpent" value="18859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -350,8 +352,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/Android/2018-12-30-Android Setting.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="724">
-            <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <first_editor relative-caret-position="211">
+            <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           </first_editor>
           <second_editor />
         </state>

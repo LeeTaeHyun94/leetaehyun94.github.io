@@ -23,6 +23,7 @@ Android 개발 환경설정은 Android Studio를 설치해서 GUI를 이용하�
 5. CMD에서 명령어를 편하게 사용하기 위한 환경 변수 설정
     - 시스템 변수 추가 : 이름은 ANDROID_HOME, 값은 Android SDK 폴더로 지정
     - 사용자 변수 or 시스템 변수 Path에 %ANDROID_HOME%\tools\bin, %ANDROID_HOME%\emulator 추가
+
 ## 2. 원하는 Package 설치
 - sdkmanager --list : 설치된 패키지와 설치 가능한 패키지의 목록을 확인
 - sdkmanager [패키지명] : 해당 패키지를 설치
@@ -52,6 +53,7 @@ avdmanager delete avd -n test
 ## 4. AVD Emulator 실행
 - emulator -list-avds : 현재 사용 가능한 AVD 목록 조회
 - emulater -avd [디바이스 이름] : 해당 AVD Emulator 가동
+
 ## 5. Enable Keyboard
 이 포스팅에 나온대로 Android Emulator Setting을 하게 되면 Keyboard로 입력이 불가능하기 때문에 설정을 추가해줘야 한다.
 
