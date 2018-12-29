@@ -83,6 +83,7 @@ public class Test01 {
             // 메소드가 호출된 인스턴스 자신을 대상으로 동기화한다는 의미.
             // 매개변수에 동기화의 대상으로 지정할 것을 전달하면 된다.
             ```
+            
         ```java
         class Ex1 implements Runnable {
             private StringBuffer buffer = new StringBuffer();
@@ -117,6 +118,7 @@ public class Test01 {
         }
         // 임계영역 지정 전에는 우선순위에 따라 스레드가 실행되었다.
         ```
+        
         ```java
         class Ex1 implements Runnable {
             private StringBuffer buffer = new StringBuffer();
