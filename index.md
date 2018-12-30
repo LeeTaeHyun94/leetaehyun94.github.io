@@ -2,8 +2,8 @@
 layout: frontpage
 ---
 
-## leethyun의 블로그
+## Dev Universe (leethyun Blog)
 
-Hello, Blog world!
+Hello, Dev Universe!
 
 주인과 함께 성장하는 블로그
