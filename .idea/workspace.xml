@@ -19,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/Android/2018-12-30-Android Setting.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="591">
-                <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+              <first_editor relative-caret-position="629">
+                <caret line="61" column="3" lean-forward="true" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -268,12 +268,12 @@
       <workItem from="1545735131227" duration="2103000" />
       <workItem from="1546083948695" duration="8887000" />
       <workItem from="1546100885800" duration="3350000" />
-      <workItem from="1546144731924" duration="4704000" />
+      <workItem from="1546144731924" duration="4828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28504000" />
+    <option name="totallyTimeSpent" value="28628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -508,8 +508,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/Android/2018-12-30-Android Setting.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="591">
-            <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+          <first_editor relative-caret-position="629">
+            <caret line="61" column="3" lean-forward="true" selection-start-line="61" selection-start-column="3" selection-end-line="61" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>

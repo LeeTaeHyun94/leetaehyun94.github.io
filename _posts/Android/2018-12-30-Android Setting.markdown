@@ -58,8 +58,8 @@ avdmanager delete avd -n test
 ## 4. AVD Emulator 실행
 - emulator -list-avds : 현재 사용 가능한 AVD 목록 조회
 - emulater -avd [디바이스 이름] : 해당 AVD Emulator 가동
----
 
+---
 ## 5. Enable Keyboard
 이 포스팅에 나온대로 Android Emulator Setting을 하게 되면 Keyboard로 입력이 불가능하기 때문에 설정을 추가해줘야 한다.
 
