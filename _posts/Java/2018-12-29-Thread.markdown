@@ -3,7 +3,6 @@ layout: post
 title:  "Thread"
 description: "Introduction to Java Thread"
 author: leethyun
-image: "/assets/bg.png"
 date:   2018-12-29 23:30:00
 categories: Java
 comments: true
