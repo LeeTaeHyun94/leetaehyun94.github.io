@@ -8,7 +8,7 @@ description: leethyun's Thinkings & Posts
 #   Google search results) and in your feed.xml site description.
 
 # baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: https://leetaehyun94.github.io
 # twitter_username: jekyllrb
 github_username: Leetaehyun94
 permalink: /posts/:title/
