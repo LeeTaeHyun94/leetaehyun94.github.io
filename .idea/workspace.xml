@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63138770-a99f-474a-9c8c-2e974526993b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/Algorithm/2018-12-20-15762_Multiplayer_Moo - 복사본.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Algorithm/2018-12-20-15762_Multiplayer_Moo.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +16,44 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feed.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/HisStory/2018-12-31-2018 회고.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="152">
-                <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+                <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/Algorithm/2018-12-24-15761_Lemonade_Line.markdown">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="285">
+                <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/Algorithm/2019-01-01-1644_소수의_연속합.markdown">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="399">
+                <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -28,31 +61,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/Algorithm/2018-12-20-15762_Multiplayer_Moo.markdown">
+        <entry file="file://$PROJECT_DIR$/_posts/Algorithm/2019-01-01-1261_알고스팟.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="380">
-                <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <first_editor relative-caret-position="285">
+                <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sitemap.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -113,6 +128,8 @@
         <option value="$PROJECT_DIR$/_posts/HisStory/2018-12-31-2018 회고.markdown" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/sitemap.xml" />
+        <option value="$PROJECT_DIR$/_posts/Algorithm/2019-01-01-1644_소수의_연속합.markdown" />
+        <option value="$PROJECT_DIR$/_posts/Algorithm/2019-01-01-1261_알고스팟.markdown" />
       </list>
     </option>
   </component>
@@ -130,6 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,7 +219,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,6 +230,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\leeth\Desktop\workspace\Git\leetaehyun94.github.io\_posts\Algorithm" />
       <recent name="C:\Users\leeth\Desktop\workspace\Git\leetaehyun94.github.io\_posts\HisStory" />
       <recent name="C:\Users\leeth\Desktop\workspace\Git\leetaehyun94.github.io\assets" />
       <recent name="C:\Users\leeth\Desktop\workspace\Git\leetaehyun94.github.io\_posts\Java" />
@@ -251,12 +269,13 @@
       <workItem from="1546083948695" duration="8887000" />
       <workItem from="1546100885800" duration="3350000" />
       <workItem from="1546144731924" duration="16527000" />
-      <workItem from="1546236655027" duration="1161000" />
+      <workItem from="1546236655027" duration="2718000" />
+      <workItem from="1546338728023" duration="1547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41488000" />
+    <option name="totallyTimeSpent" value="44592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -357,13 +376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -492,6 +504,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm/2018-12-20-15762_Multiplayer_Moo.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="21">
+            <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sitemap.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -499,21 +521,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/feed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/HisStory/2018-12-31-2018 회고.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="152">
-            <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/Algorithm/2018-12-20-15762_Multiplayer_Moo.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm/2018-12-24-15761_Lemonade_Line.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="380">
-            <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <first_editor relative-caret-position="285">
+            <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm/2019-01-01-1644_소수의_연속합.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="399">
+            <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/Algorithm/2019-01-01-1261_알고스팟.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="285">
+            <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           </first_editor>
           <second_editor />
         </state>

@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "[BOJ 1644] 소수의 연속합"
+date:   2019-01-01 20:00:00
+categories: Algorithm
+comments: true
+---
+[[BOJ 1644] 소수의 연속합](https://www.acmicpc.net/problem/1644)
+
+스포이지만, 소수 판별 이후에 투 포인터를 이용한 연속합 문제라는 것은 빠르게 파악할 수 있었다.
+풀고 난 뒤, 다른 사람들의 코드 리뷰를 하면서 에라토스테네스의 체에서 짝수 커팅을 하면 시간이 더 줄어드는 것을 알게 되었다.
+
+대단한 것은 아니지만, 개인적으로 한 번도 떠올려 본 적이 없다는 사실 때문에 이해하고 나니 신선한 충격이었다. 
+
+## 문제 요약
+
+자연수 N이 주어졌을 때, N을 연속된 소수의 합으로 나타낼 수 있는 경우의 수를 구하는 문제 
+
+## 풀이
+
+에라토스테네스의 체를 이용해 소수를 빠르게 판별한 다음, 나는 소수에 대한 연속합 배열을 미리 구했다.
+
+이후에 시작과 끝을 가리키는 투 포인터를 이용하여 적절하게 범위를 늘리고 줄여가며 탐색하면서 연속합이 N이 나오는 경우를 세면 된다.
+
+## 코드
+
+```C++
+#include<cstdio>
+#include<vector>
+using namespace std;
+int N, ans;
+bool p[4000001];
+vector<int> s;
+int main() {
+	s.push_back(0);
+	scanf("%d", &N);
+	for (int i = 2; i * i <= N; i++)
+		if (!p[i]) for (int j = i + i; j <= N; j += i) p[j] = 1;
+	for (int i = 2; i <= N; i++) if (!p[i]) s.push_back(s.back() + i);
+	for (int l = 0, r = 1; l < s.size() && r < s.size();) {
+		int t = s[r] - s[l];
+		if (t == N) ans++, l++;
+		else t < N ? r++ : l++;
+	}
+	printf("%d", ans);
+	return 0;
+}
+```
+
+### 에라토스테네스의 체 짝수 커팅
+```C++
+#include<cstdio>
+#include<vector>
+using namespace std;
+int N, ans;
+bool p[4000001];
+vector<int> s;
+int main() {
+	s.push_back(0);
+	s.push_back(2);
+	scanf("%d", &N);
+	for (int i = 3; i * i <= N; i += 2)
+		if (!p[i]) for (int j = i * i; j <= N; j += i + i) p[j] = 1;
+	for (int i = 3; i <= N; i += 2) if (!p[i]) s.push_back(s.back() + i);
+	for (int l = 0, r = 1; l < s.size() && r < s.size();) {
+		int t = s[r] - s[l];
+		if (t == N) ans++, l++;
+		else t < N ? r++ : l++;
+	}
+	printf("%d", ans);
+	return 0;
+}
+```
