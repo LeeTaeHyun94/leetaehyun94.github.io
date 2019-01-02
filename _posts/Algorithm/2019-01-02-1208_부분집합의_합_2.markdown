@@ -1,0 +1,69 @@
+---
+layout: post
+title:  "[BOJ 1208] 부분집합의 합"
+date:   2019-01-02 23:40:00
+categories: Algorithm
+comments: true
+---
+[[BOJ 1208] 부분집합의 합](https://www.acmicpc.net/problem/1208)
+
+시간을 줄이는 방법을 차근차근 꼼꼼히 한 가지도 빠짐없이 고려해야 할 것 같다.
+결국 풀이도 떠올리지 못했고 재귀도 정말 못 짜는 것 같다.
+연습만이 살 길.
+
+## 문제 요약
+
+N개의 정수로 이루어진 집합이 있을 때, 이 집합의 공집합이 아닌 부분집합 중에서 그 집합의 원소를 다 더한 값이 S가 되는 경우의 수를 구하는 문제 
+
+## 풀이
+
+완전탐색하면 N이 최대 40이라 2^N의 시간 복잡도를 갖기 때문에 시간이 매우 오래 걸린다.
+결국 무슨 수를 써도 전수조사가 필요하기 때문에 2^N으로 탐색하는 것이 아니라 meet in the middle 아이디어와 유사하게 2^(2/N)으로 절반 씩 나누어 탐색하면 된다. 
+
+## 코드
+
+```C++
+#include<cstdio>
+#include<algorithm>
+using namespace std;
+int N, S, n[40], s[4000001];
+long long ans;
+bool v[40];
+void go(int idx, int sum) {
+	bool b = 0;
+	for (int i = 0; i < N / 2; i++) if (v[i]) b = 1;
+	if (b) {
+		s[sum + 2000000]++;
+		if (sum == S) ans++;
+	}
+	for (int i = idx; i < N / 2; i++) {
+		if (v[i]) continue;
+		v[i] = 1;
+		go(i, sum + n[i]);
+		v[i] = 0;
+	}
+}
+void go1(int idx, int sum) {
+	bool b = 0;
+	for (int i = N / 2; i < N; i++) if (v[i]) b = 1;
+	if (b) {
+		if (abs(S - sum) < 2000001) ans += s[S - sum + 2000000];
+		if (sum == S) ans++;
+	}
+	
+	for (int i = idx; i < N; i++) {
+		if (v[i]) continue;
+		v[i] = 1;
+		go1(i, sum + n[i]);
+		v[i] = 0;
+	}
+}
+int main() {
+	scanf("%d %d", &N, &S);
+	for (int i = 0; i < N; i++) scanf("%d", &n[i]);
+	go(0, 0);
+	go1(N / 2, 0);
+	printf("%lld", ans);
+	return 0;
+}
+```
