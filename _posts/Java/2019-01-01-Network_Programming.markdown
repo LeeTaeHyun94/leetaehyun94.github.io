@@ -84,7 +84,7 @@ comments: true
         ```
         
     - UDP (User Datagram Protocol) : 데이터를 일정 개수, 고정 길이를 가진 패킷으로 분할하여 전송한다.
-        - ![UDP](./../../assets/Java/15.PNg)
+        - ![UDP](./../../assets/Java/15.PNG)
         - 비연결지향형 소켓의 데이터 전송 특성
             - 전송 순서 상관없이 빠른 속도의 전송을 지향
             - 데이터 손실의 우려가 있다.
