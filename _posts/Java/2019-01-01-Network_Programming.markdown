@@ -33,6 +33,7 @@ comments: true
         - ![Socket](./../../assets/Java/16.PNG)
         - ServerSocket : 서버를 위한 소켓
         - Socket : 클라이언트를 위한 소켓
+        
         ```Java
         import java.io.FileInputStream;
         import java.io.InputStream;
@@ -92,6 +93,7 @@ comments: true
         - DatagramSocket : UDP 프로토콜을 사용하는 소켓을 생성
         - DatagramPacket : UDP 패킷 생성
         - MulticastSocket
+        
         ```java
         import javax.swing.*;
         import java.awt.*;
