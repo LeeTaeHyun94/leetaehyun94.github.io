@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63138770-a99f-474a-9c8c-2e974526993b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Javascript/2019-01-05-Compare_Operator.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Javascript/2019-01-05-Compare_Operator.markdown" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -112,10 +114,19 @@
         <entry file="file://$PROJECT_DIR$/_posts/Javascript/2019-01-05-Compare_Operator.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="247">
-                <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <first_editor relative-caret-position="171">
+                <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -181,6 +192,7 @@
         <option value="$PROJECT_DIR$/_posts/Algorithm/2019-01-02-1208_부분집합의_합_2.markdown" />
         <option value="$PROJECT_DIR$/_posts/Java/2019-01-01-Network_Programming.markdown" />
         <option value="$PROJECT_DIR$/_posts/Java/2019-01-04-Object-Oriented_Programming.markdown" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_posts/Javascript/2019-01-05-Compare_Operator.markdown" />
       </list>
     </option>
@@ -226,12 +238,6 @@
               <item name="leetaehyun94.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetaehyun94.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leetaehyun94.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetaehyun94.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-              <item name="Java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="leetaehyun94.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -314,12 +320,12 @@
       <workItem from="1546338728023" duration="1702000" />
       <workItem from="1546395950985" duration="12000" />
       <workItem from="1546439902543" duration="4302000" />
-      <workItem from="1546669419382" duration="1835000" />
+      <workItem from="1546669419382" duration="2032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50896000" />
+    <option name="totallyTimeSpent" value="51093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -642,11 +648,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/Javascript/2019-01-05-Compare_Operator.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="247">
-            <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <first_editor relative-caret-position="171">
+            <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           </first_editor>
           <second_editor />
         </state>

@@ -3,7 +3,7 @@ layout: post
 title:  "Compare Operator"
 description: "Compare Operator (비교 연산자)"
 date:   2019-01-05 19:10:00
-categories: Java
+categories: Javascript
 comments: true
 ---
 ## 1. 동등 연산자 (==)
