@@ -20,3 +20,7 @@ pattern.test('abcdef'); // return boolean
 
 var urlPattern = /\b(?:https?):\/\/[a-z0-9-+&@#\/%?=~_|!:,.;]*/gim;
 ```
+
+## 1. 옵션 (i, g)
+- i : 대소문자 구분 없이 패턴 검색
+- g : 검색된 모든 결과를 반환
