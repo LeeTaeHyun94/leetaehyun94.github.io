@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Data Type"
+description: "Specific Data Type of Javascript"
+date:   2019-01-05 19:10:00
+categories: Javascript
+comments: true
+---
+1. null - 프로그래머가 의도한 값이 없는 상태
+2. undefined - 말 그대로 정의되지 않은, 그래서 값이 없는 상태를 말한다.
+3. NaN - 불가능한 연산의 결과를 반환 (ex. x / 0 등등)
+4. boolean - true / false (* '' == false, 'string', !undefined, !null, !NaN == true)
