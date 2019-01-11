@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Object"
+description: "Object in Javascript"
+date:   2019-01-11 19:40:00
+categories: Javascript
+comments: true
+---
+## 1. Dictionary (C++ Map과 유사)
+
+```javascript
+var dic = {'apple' : 1, 'banana' : 2, 'cat' : 3}; // 객체(Dictionary)의 생성, Key : Value
+dic['apple'], dic.apple // value에 접근하는 두 가지 표현방식.
+for(key in dic) console.log("key : " + key + ", value : " + dic[key]);
+// for(var in Object) <= for in 문을 통해 객체에 접근 가능.
+```
+
+## 2. 객체 지향 프로그래밍
+
+```javascript
+var grades = {
+	'list' : {'A' : 100, 'B' : 90, 'C' : 80},
+	'show' : function() {
+		for (var key in this.list) console.log("key : " + key + ", value : " + this.list[key]);
+	}
+};
+grades.show();
+// 위 형태의 프로그래밍이 가능하다. Java에서 메소드를 정의했던 방식을 JavaScript에서는 변수에 함수를 정의하여
+// grades라는 객체는 함수도 사용 가능하고 멤버 변수 또한 사용 가능하다.
+```
