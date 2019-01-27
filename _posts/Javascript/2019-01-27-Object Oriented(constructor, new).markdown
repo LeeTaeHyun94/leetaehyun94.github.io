@@ -1,4 +1,4 @@
- ---
+---
 layout: post
 title:  "Object Oriented - constructor, new"
 description: "Object Oriented - constructor, new"
