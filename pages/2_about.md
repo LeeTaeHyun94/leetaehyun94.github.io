@@ -26,7 +26,8 @@ See my project page for details.
 ### 2. Career
 
 - 2016.12 ~ 2017.12 : Research Assistant in Intelligent System lab. (The Catholic University of Korea)
-- 2018.09 ~ ing : Research Assistant in Algorithm lab. (The Catholic University of Korea)
+- 2018.09 ~ 2019.01 : Research Assistant in Algorithm lab. (The Catholic University of Korea)
+- 2019.01 ~ ing : Software Engineer in Bearrobotics
 
 ### 3. Skill
 
@@ -41,17 +42,25 @@ See my project page for details.
   - Node.JS
     - Express Framework
     - mongoose
+  - Django
 - Front-End
   - C# & WPF
   - Bootstrap (HTML + JQuery + Javascript)
   - React
+    - MobX
+    - Material-UI
+    - axios
   - Android (Java)
 - Database
   - MySQL
   - Oracle DBMS
   - mongoDB
+  - SQLite3
 - Infra
-  - AWS
+  - Amazon Web Service
+  - Google Cloud Platform
+  - Phabricator
+    - arc
 - Algorithm (Problem Solving)
   - C, C++
   - Data Structure
