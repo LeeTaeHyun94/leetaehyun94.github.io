@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Function Oriented - Closure"
-description: "Function Oriented - Closure"
+title:  "Function Oriented - Arguments"
+description: "Function Oriented - Arguments"
 date:   2019-01-19 20:30:00
 categories: Javascript
 comments: true
