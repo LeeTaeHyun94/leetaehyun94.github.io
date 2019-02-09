@@ -13,6 +13,7 @@ comments: true
 하나의 어플리케이션 내에 모든 로직이 들어가 있다.
 example) 온라인 쇼핑몰 어플리케이션이 있을 때, Tomcat 서버 내부의 WAR(Web application package)에 사용자 관리, 상품 관리, 주문 관리 등 모든 컴포넌트들이 들어있고 이를 처리하는 프론트엔드 로직까지 하나로 포장되어 들어가 있는 구조
 ![Example of Monolithic Architecture](../../assets/Web/1.PNG)
+
 각 컴포넌트들은 함수를 이용한 Call-by-reference 구조로 상호 호출한다.
 - 장점 : 전체 어플리케이션을 하나로 처리하기 때문에, 하나의 어플리케이션만 개발하면 되고, 배포 및 테스트 또한 하나의 어플리케이션에 대해서 이루어지기 때문에 편리하다.
 - 단점
