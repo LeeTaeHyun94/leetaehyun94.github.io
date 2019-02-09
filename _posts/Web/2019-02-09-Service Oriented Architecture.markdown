@@ -1,0 +1,101 @@
+---
+layout: post
+title:  "Service Oriented Architecture"
+description: "Service Oriented Architecture"
+date:   2019-02-09 18:00:00
+categories: Web
+comments: true
+---
+기존 어플리케이션의 기능들을 비즈니스적인 의미를 가지는 기능 단위로 묶어서 표준화된 호출 인터페이스를 통해서 서비스를 구현하고, 이 서비스들을 기업의 업무에 따라 조합하여 어플리케이션을 구성하는 소프트웨어 개발 아키텍쳐
+- 배경
+  - 웹 서비스의 등장
+  - 점점 확장되어가는 독립된 업무 시스템 (통합 요구)
+  - 기업의 비즈니스 속도가 빨라져 감에 따라 IT 시스템의 업무 변화에 대한 민접한 대응력이 필요하게 됨. (민첩성 요구)
+- Service
+  - 플랫폼에 종속되지 않는 표준 인터페이스를 통해서 기업의 업무를 표현하고 느슨히 결합된 상호 조합 가능한 소프트웨어 컴포넌트
+  - ex : 임직원 정보 서비스, 계좌 이체 서비스, 상품 주문 서비스
+  - ![Service](../../assets/Web/2.PNG)
+  - 특징
+    - ![Features of Service](../../assets/Web/3.PNG)
+    - Vertical Slicing
+    - Has standard based interface
+    - Loosely Coupled
+    - Composable
+    - Coarse grained
+    - Discoverable
+  - 구성 : 규약, 인터페이스, 구현체(Implementation)
+  - 종류
+    - 비즈니스 서비스 : 일반적으로 SOA에서 정의하는 서비스
+    - Intermediary 서비스
+      - Routing
+      - Transformation
+      - Functional Adding
+      - Facade
+      - etc..
+    - Process Centric 서비스
+      - 비즈니스 서비스를 조합 (Orchestration)
+      - 업무 프로세스를 구현
+      - Stateful (상태 정보가 있을 수 있다.)
+    - Application 서비스
+      - technical implementation 서비스
+      - ex : Load Balancing, Transaction management, Service Adapter, Security Authentication, Document Parsing, Logging etc..
+    - Public Enterprise 서비스
+      - 타 기업이나 외부 시스템으로 서비스를 제공하고자 할 때 정의된다.
+      - 보안, 과금, 성능 등이 고려된다.
+      - ex : 금융권 대외계 업무
+    - ![Classification of Service](../../assets/Web/4.PNG)
+- 단계적 발전 구조
+  - Fundamental SOA
+    - 기존 시스템들을 서비스화하여, 각 시스템들을 통합하는 단계
+      - 서비스화와 통합이 중점, 전체를 하나의 시스템화한다.
+      - 서비스에 대한 조합은 Front-end에서 담당
+      - 비즈니스 서비스 + 어플리케이션 서비스로만 구성된다.
+    - ![Concept of Fundamental SOA](../../assets/Web/5.PNG)
+    - 문제점
+      - 시스템의 크기가 증가함에 따라 서비스와 서비스, 서비스와 Front-end 단의 연결이 매우 복잡해진다. (거미줄식 P2P 연결)
+      - 시스템의 유연성이 떨어짐
+      - 관리 및 중앙 통제에 있어서 문제가 발생
+  - Networked SOA
+    - SOA 시스템 가운데에 서비스 허브(ESB : Enterprise Service Bus)를 둬서 서비스의 중앙 통제력 및 유연성을 강화한다.
+    - 최근에는 ESB와 기본적인 특성은 유사하나 기능을 낮추고 EAI의 통합 기능을 제거하고 API 처리에만 집중하는 API Gateway를 사용한다.
+    - Intermediary 서비스가 ESB에 위치한다.
+    - ![Networked SOA](../../assets/Web/6.PNG)
+  - Process Oriented SOA
+    - Business Flow가 있을 경우에만 적용
+    - 서비스의 조합을 통한 업무의 구현에 BPM(Business Process Management)를 이용한다.
+    - 업무(기능) 변화에 민첩하게 반응 가능하다. (Agility)
+    - 기술 조직과 비즈니스 조직 간의 원활한 의사소통
+- 구현 시 고려사항
+  - 서비스화
+    - Service Adapter 고려
+    - 서비스 인터페이스 표준 결정
+  - 트랜잭션 처리
+  - 보안
+    - 인증과 권한 : 분산된 서비스에 대해 통합된 사용자 인증과 권한 관리 필요
+    - 암호화
+      - 암호화 방법(대칭키/비대칭키) 결정
+      - 암호화 범위 결정
+        - 전체 메시지를 암호화할 것인가? / 메시지 내용 중 중요 데이터만 암호화할 것인가?
+        - 암호화할 내용을 메시지 Header에 넣을 것인가? / Body에 넣을 것인가?
+  - 모니터링
+    - 각 서비스의 성능/용량 데이터 필요
+      - 서비스를 조합하여 새로운 업무를 구현하고자 할 때 업무의 수행 시간과 가용 사용자를 예측할 수 있어야 한다.
+      - 이를 위한 성능 데이터 수집이 필요하다.
+    - 서비스 간 연동 시 병목 구간 추적 필요 : 장애 시에 병목 구간에 대한 원인을 추적해야 한다.
+    - 로깅
+      - 어느 수준(단위)까지 로그를 남길 것인가? (업무? 서비스?)
+      - 어디에 로그를 저장할 것인가? (중앙 집중형? 각 시스템에 분산?)
+  - 서비스 검색
+    - 서비스를 조합하여 업무를 구현하고자 할 때 서비스를 검색할 수 있어야 한다.
+      - 운영 시 서비스 검색 (UDDI, API Portal)
+        - 서비스 위치와 명세 (WSDL)
+        - Metadata (과금, 권한, 보안 규약 등)
+      - 개발 시 서비스 검색 (Enterprise Repository)
+        - 서비스를 개발 및 수정할 경우, 서비스 구현에 필요한 리소스를 찾을 수 있어야 한다.
+        - 분석, 설계 명세, LIB, 소스 코드, DB 정보
+        - 서비스 버전 관리
+- 결론
+  - 기업의 업무 환경과 요구에 맞는 단계적인 SOA 적용이 필요하다. (SOA 단계적 발전 구조)
+    - ex : 현재 단계에서 ESB or BPM이 필요한가?
+  - 서비스 개발에 대한 통제와 관리 시스템 구축 (Governance Tool) 필요
+    - 개발 시작 단계에서부터 서비스 개발에 대한 표준, 재사용을 위한 Repository 관리 필요
