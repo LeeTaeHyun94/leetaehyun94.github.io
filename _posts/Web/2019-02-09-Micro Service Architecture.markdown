@@ -25,7 +25,7 @@ example) 온라인 쇼핑몰 어플리케이션이 있을 때, Tomcat 서버 내
 상황과 필요에 따라서 그에 맞는 아키텍쳐 설계를 적절히 해야하지만, 서비스의 규모가 커질수록 모노리틱 아키텍쳐는 불리한 점이 많다.
 
 ## 3. Micro Service Architecture
-[SOA(Service Oriented Architecture)]()를 근간으로 대용량 웹 서비스가 늘어나면서 대용량 웹 서비스 개발에 맞는 구조로 경량화되고, 대규모 개발 팀의 조직 구조에 맞도록 변형된 아키텍쳐
+[SOA(Service Oriented Architecture)](https://leetaehyun94.github.io/posts/Service-Oriented-Architecture/)를 근간으로 대용량 웹 서비스가 늘어나면서 대용량 웹 서비스 개발에 맞는 구조로 경량화되고, 대규모 개발 팀의 조직 구조에 맞도록 변형된 아키텍쳐
 
 ### (1) Architecture Structure
 - 서비스 : MSA에서 각 컴포넌트는 서비스라는 개념으로 정의된다. 서비스는 데이터에서부터 비즈니스 로직까지 독립적으로 컴포넌트 간의 상호의존성 없이 개발(수직적 분할 : Vertical Slicing)된 컴포넌트로 REST API와 같은 표준 인터페이스로 그 기능을 외부에 제공한다.
