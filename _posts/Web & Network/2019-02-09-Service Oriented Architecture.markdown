@@ -3,7 +3,7 @@ layout: post
 title:  "Service Oriented Architecture"
 description: "Service Oriented Architecture"
 date:   2019-02-09 18:00:00
-categories: Web
+categories: Web & Network
 comments: true
 ---
 기존 어플리케이션의 기능들을 비즈니스적인 의미를 가지는 기능 단위로 묶어서 표준화된 호출 인터페이스를 통해서 서비스를 구현하고, 이 서비스들을 기업의 업무에 따라 조합하여 어플리케이션을 구성하는 소프트웨어 개발 아키텍쳐

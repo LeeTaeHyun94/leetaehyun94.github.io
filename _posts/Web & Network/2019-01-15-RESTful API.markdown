@@ -3,7 +3,7 @@ layout: post
 title:  "RESTful API"
 description: "RESTful API - Resource oriented architecture"
 date:   2019-01-15 21:00:00
-categories: Web
+categories: Web & Network
 comments: true
 ---
 ## 1. Concept
