@@ -3,7 +3,7 @@ layout: post
 title:  "Proxy Server"
 description: "Proxy Server"
 date:   2019-02-10 21:15:00
-categories: Web & Network
+categories: Network
 comments: true
 ---
 ## 1. Proxy
