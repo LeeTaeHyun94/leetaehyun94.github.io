@@ -29,6 +29,7 @@ HTTP 통신은 Request와 Response로 이루어진다.
 - HTTP의 데이터 형식은 Header와 Body로 구성되어 있다.
   - Request Header는 데이터를 요청하기 위한 서버가 인식할 수 있도록 약속된 형식을 따라야 한다.
   - ![Request & Response](../../assets/Network/16.PNG)
+
     (1) Request Header
     - GET / HTTP/1.1 : HTTP전송 방법과 프로토콜 버전
     - Host : 요청하는 서버 주소
