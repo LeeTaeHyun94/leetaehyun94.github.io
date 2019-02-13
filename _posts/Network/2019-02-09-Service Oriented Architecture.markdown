@@ -14,9 +14,9 @@ comments: true
 - Service
   - 플랫폼에 종속되지 않는 표준 인터페이스를 통해서 기업의 업무를 표현하고 느슨히 결합된 상호 조합 가능한 소프트웨어 컴포넌트
   - ex : 임직원 정보 서비스, 계좌 이체 서비스, 상품 주문 서비스
-  - ![Service](../../assets/Web/2.PNG)
+  - ![Service](../../assets/Network/2.PNG)
   - 특징
-    - ![Features of Service](../../assets/Web/3.PNG)
+    - ![Features of Service](../../assets/Network/3.PNG)
     - Vertical Slicing
     - Has standard based interface
     - Loosely Coupled
@@ -43,14 +43,14 @@ comments: true
       - 타 기업이나 외부 시스템으로 서비스를 제공하고자 할 때 정의된다.
       - 보안, 과금, 성능 등이 고려된다.
       - ex : 금융권 대외계 업무
-    - ![Classification of Service](../../assets/Web/4.PNG)
+    - ![Classification of Service](../../assets/Network/4.PNG)
 - 단계적 발전 구조
   - Fundamental SOA
     - 기존 시스템들을 서비스화하여, 각 시스템들을 통합하는 단계
       - 서비스화와 통합이 중점, 전체를 하나의 시스템화한다.
       - 서비스에 대한 조합은 Front-end에서 담당
       - 비즈니스 서비스 + 어플리케이션 서비스로만 구성된다.
-    - ![Concept of Fundamental SOA](../../assets/Web/5.PNG)
+    - ![Concept of Fundamental SOA](../../assets/Network/5.PNG)
     - 문제점
       - 시스템의 크기가 증가함에 따라 서비스와 서비스, 서비스와 Front-end 단의 연결이 매우 복잡해진다. (거미줄식 P2P 연결)
       - 시스템의 유연성이 떨어짐
@@ -59,7 +59,7 @@ comments: true
     - SOA 시스템 가운데에 서비스 허브(ESB : Enterprise Service Bus)를 둬서 서비스의 중앙 통제력 및 유연성을 강화한다.
     - 최근에는 ESB와 기본적인 특성은 유사하나 기능을 낮추고 EAI의 통합 기능을 제거하고 API 처리에만 집중하는 API Gateway를 사용한다.
     - Intermediary 서비스가 ESB에 위치한다.
-    - ![Networked SOA](../../assets/Web/6.PNG)
+    - ![Networked SOA](../../assets/Network/6.PNG)
   - Process Oriented SOA
     - Business Flow가 있을 경우에만 적용
     - 서비스의 조합을 통한 업무의 구현에 BPM(Business Process Management)를 이용한다.

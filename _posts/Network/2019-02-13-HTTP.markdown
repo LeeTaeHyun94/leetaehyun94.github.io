@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "HTTP"
+description: "HyperText Transfer Protocol"
+date:   2019-02-13 01:25:00
+categories: Network
+comments: true
+---
+## 1. HTTP (HyperText Transfer Protocol)
+인터넷 상에서 데이터를 주고받기 위한 프로토콜
+- 데이터는 오디오/비디오/이미지/텍스트 등 종류를 가리지 않는다. (본질은 같다.)
+- 때문에 모두 HTTP를 이용해 전달하고 받을 수도 있다.
+- 이 때, TCP/IP 4계층(or OSI 7계층) 순서대로 네트워크에 접근하는데, HTTP는 4 응용(Application) 계층에 속한다.
+- ![Layers](../../assets/Network/15.PNG)
+- HTTP 통신 과정
+  - 4 응용 계층에서 정보를 만들어 전달
+  - 3 전송(Transport) 계층에서 통신 노드를 연결
+  - 2(Internet) 계층에서 통신 노드 간 패킷을 전송, 라우팅
+  - 1(Network Interface) 계층에서 전기적 신호로 변환하여 실제로 전송하게 된다.
+  - 받는 쪽에서는 반대의 과정을 그대로 거친다.
+- 모든 컴퓨터와 서버는 네트워크를 통해 외부에서 접근하기 위해 IP 주소가 필요하다.
+- 그러나 사용자는 브라우저를 이용하여 문자 URL을 전달하기 때문에 이를 해석하기 위해 HTTP 요청 시, DNS 서버로 접근하여 해당 Domain Name에 맞는 IP를 받아오는 과정을 거친다.
+  - 이러한 과정을 '이름 해결'이라 부르며 UDP 통신을 한다.
+  - 그 이후에 일반적으로, 받아온 IP를 갖고 한 번에 서버에 접근하는 것이 아니라, IP를 알고 있는 다른 서버에 경유하면서 여러 단계에 거쳐 접근하게 된다.
+
+## 2. Request & Response
+HTTP 통신은 Request와 Response로 이루어진다.
+- 일반적으로, 클라이언트에서는 Request를 만들고 서버는 요청에 해당하는 Response를 클라이언트에 반환한다.
+- HTTP의 데이터 형식은 Header와 Body로 구성되어 있다.
+  - Request Header는 데이터를 요청하기 위한 서버가 인식할 수 있도록 약속된 형식을 따라야 한다.
+  - ![Request & Response](../../assets/Network/16.PNG)
+    (1) Request Header
+    - GET / HTTP/1.1 : HTTP전송 방법과 프로토콜 버전
+    - Host : 요청하는 서버 주소
+    - User-Agent : OS/브라우저 정보
+    - Accept : 클라이언트 이해 가능한 컨텐츠 타입
+    - Accept-Language : 클라이언트 인식 언어
+    - Accept-Encoding : 클라이언트 인코딩 방법Connection: 전송 완료후 접속 유지 정보 (keep-alive)
+    - Upgrade-Insecure-Requests : 신호를 보낼때 데이터 암호화 여부
+    - Content-Type : 클라이언트에게 반환되어야하는 컨텐츠 유형
+    - Content-Length : 본문크기
+
+    (2) Response Header
+    - HTTP/1.1 200 ok : 프로토콜 버전과 응답상태
+    - Access-Control-Allow-Origin : 서버에 타 사이트의 접근을 제한하는 방침
+    - Connection : 전송 완료 후 접속 유지 정보 (keep-alive)
+    - Content-Encoding : 미디어 타입을 압축한 방법
+    - Date : 헤더가 만들어진 시간
+    - ETag : 버전의 리소스를 식별하는 식별자
+    - Keep-Alive : 연결에대한 타임아웃과 요청 최대 개수 정보
+    - Last-Modified : 웹 시간을 가지고 있다 수정되었을때만 데이터 변경 ( 캐시연관 )
+    - Server : 웹서버로 사용되는 프로그램 이름
+    - Set-Cookie : 쿠키 정보
+    - Transfer-Encoding : 인코딩 형식 지정
+    - X-Frame-Options : frame/iframe/object 허용 여부
+  - GET 요청에는 Body가 필요없지만, 다른 요청 방식들에서는 서버의 API가 요구하는 데이터 형식에 맞게 Body로 데이터를 전송해야 한다.

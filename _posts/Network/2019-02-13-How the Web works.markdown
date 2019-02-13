@@ -16,6 +16,7 @@ comments: true
 (2) TCP/IP (Transmission Control Protocol/Internet Protocol) : 데이터가 목적지를 향해 어떻게 웹을 지나다닐 수 있는지 정의하는 통신 규약
 (3) DNS (Domain Name System Servers) : 웹 사이트를 위한 주소록
   - IP 주소는 정확히 기억하기에 쉽지 않기 때문에 특정 도메인을 지정하고 도메인에 따라 웹 사이트의 IP 주소로 매칭시켜준다.
+
 (4) HTTP (HyperText Transfer Protocol) : 클라이언트와 서버가 서로 통신할 수 있게 하기 위한 언어를 정의하는 Application Protocol
 (5) Component Files :  웹 사이트를 구성하는 여러 파일들
   - Codes : 근본적으로는 HTML, CSS, Javascript로 구성되어 있다.
