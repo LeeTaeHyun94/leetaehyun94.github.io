@@ -3,7 +3,7 @@ layout: post
 title:  "How the Web works"
 description: "How the Web works"
 date:   2019-02-13 01:00:00
-categories: Network
+categories: Web
 comments: true
 ---
 ## 1. Client & Server

@@ -3,7 +3,7 @@ layout: post
 title:  "Proxy Server"
 description: "Proxy Server"
 date:   2019-02-10 21:15:00
-categories: Network
+categories: Web
 comments: true
 ---
 ## 1. Proxy
@@ -22,7 +22,7 @@ comments: true
 
 ### (1) Foward Proxy
 클라이언트 호스트들과 접근하고자 하는 원격 리소스의 사이에 위치하는 경우
-![Foward Proxy](../../assets/Network/13.PNG)
+![Foward Proxy](../../assets/Web/13.PNG)
 - 원격 서버로부터 요청된 리소스를 가져와서 사용자들에게 돌려주는 역할을 수행한다.
 - 로컬 디스크에 데이터를 저장하며, 캐시된 데이터가 남아있다면, 다음 요청 시에도 캐시된 데이터를 제공한다.
 - 사용자에게 정해진 사이트에만 연결할 수 있도록 웹 사용 환경을 제한할 수 있다.
@@ -32,7 +32,7 @@ comments: true
 
 ### (2) Reverse Proxy
 인터넷 리소스 또는 인트라넷 리소스 바로 앞에 위치하는 경우
-![Reverse Proxy](../../assets/Network/14.PNG)
+![Reverse Proxy](../../assets/Web/14.PNG)
 - 클라이언트가 프록시 서버에 연결되었다는 것을 알 수 없다. 요청한 리소스에 직접 접근하는 것처럼 보인다.
 - 실제 서비스 서버에 대한 접근을 리버스 프록시 서버를 통해서만 가능하게 하여 보안 상의 이점을 가질 수 있다.
 - 마찬가지로 요청에 대한 데이터를 캐시할 수 있으므로 실제 서비스 서버에 대한 부하 조절이 가능하다.

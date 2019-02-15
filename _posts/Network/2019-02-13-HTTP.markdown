@@ -11,7 +11,7 @@ comments: true
 - 데이터는 오디오/비디오/이미지/텍스트 등 종류를 가리지 않는다. (본질은 같다.)
 - 때문에 모두 HTTP를 이용해 전달하고 받을 수도 있다.
 - 이 때, TCP/IP 4계층(or OSI 7계층) 순서대로 네트워크에 접근하는데, HTTP는 4 응용(Application) 계층에 속한다.
-- ![Layers](../../assets/Network/15.PNG)
+- ![Layers](../../assets/Network/1.PNG)
 - HTTP 통신 과정
   - 4 응용 계층에서 정보를 만들어 전달
   - 3 전송(Transport) 계층에서 통신 노드를 연결
@@ -28,7 +28,7 @@ HTTP 통신은 Request와 Response로 이루어진다.
 - 일반적으로, 클라이언트에서는 Request를 만들고 서버는 요청에 해당하는 Response를 클라이언트에 반환한다.
 - HTTP의 데이터 형식은 Header와 Body로 구성되어 있다.
   - Request Header는 데이터를 요청하기 위한 서버가 인식할 수 있도록 약속된 형식을 따라야 한다.
-  - ![Request & Response](../../assets/Network/16.PNG)
+  - ![Request & Response](../../assets/Network/2.PNG)
 
     (1) Request Header
     - GET / HTTP/1.1 : HTTP전송 방법과 프로토콜 버전

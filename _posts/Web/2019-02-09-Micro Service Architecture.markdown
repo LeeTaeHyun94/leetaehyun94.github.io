@@ -3,7 +3,7 @@ layout: post
 title:  "Micro Service Architecture"
 description: "Micro Service Architecture"
 date:   2019-02-09 18:00:00
-categories: Network
+categories: Web
 comments: true
 ---
 ## 1. Background
@@ -12,7 +12,7 @@ comments: true
 ## 2. Monolithic Architecture
 하나의 어플리케이션 내에 모든 로직이 들어가 있다.
 example) 온라인 쇼핑몰 어플리케이션이 있을 때, Tomcat 서버 내부의 WAR(Web application package)에 사용자 관리, 상품 관리, 주문 관리 등 모든 컴포넌트들이 들어있고 이를 처리하는 프론트엔드 로직까지 하나로 포장되어 들어가 있는 구조
-![Example of Monolithic Architecture](../../assets/Network/1.PNG)
+![Example of Monolithic Architecture](../../assets/Web/1.PNG)
 
 각 컴포넌트들은 함수를 이용한 Call-by-reference 구조로 상호 호출한다.
 - 장점 : 전체 어플리케이션을 하나로 처리하기 때문에, 하나의 어플리케이션만 개발하면 되고, 배포 및 테스트 또한 하나의 어플리케이션에 대해서 이루어지기 때문에 편리하다.
@@ -35,14 +35,14 @@ example) 온라인 쇼핑몰 어플리케이션이 있을 때, Tomcat 서버 내
   - REST API에서 /users, /products와 같은 URI가 서비스 정의의 범위로 좋은 예시이다.
 - MSA Structure
   - 각 컴포넌트는 서비스라는 형태로 구현되고 API를 이용하여 타 서비스와 통신을 한다.
-  ![MSA Structure](../../assets/Network/7.PNG)
+  ![MSA Structure](../../assets/Web/7.PNG)
   
   - 배포 관점에서도 각 서비스는 독립된 서버로 타 컴포넌트와의 의존성 없이 독립적으로 배포된다. 가장 큰 특징은 어플리케이션 로직을 분리해서 여러 개의 어플리케이션으로 나누어 서비스화하고, 각 서비스 별로 톰캣을 분산 배치한 것이다.
-  ![MSA Structure for Deployment](../../assets/Network/8.PNG)
+  ![MSA Structure for Deployment](../../assets/Web/8.PNG)
   
   사용자 관리 서비스는 독립적인 war 패키지로 개발되어, 독립된 톰캣 인스턴스에 배치된다. 확장을 위해서 서비스가 배치된 톰캣 인스턴스는 횡적으로 스케일(인스턴스 수 증가)이 가능하고, 앞단에 로드 밸런서를 배치하여 서비스 간의 로드를 분산시킨다.
 - 데이터 분리
-  - ![Data Storing Method in MSA Structure](../../assets/Network/9.PNG)
+  - ![Data Storing Method in MSA Structure](../../assets/Web/9.PNG)
   - 데이터 저장 관점에서는 중앙 집중화된 하나의 데이터베이스를 사용하는 것이 아니라 서비스 별로 별도의 데이터베이스를 사용한다. 보통 모노리틱 서비스 아키텍쳐의 경우에는 하나의 데이터베이스를 사용하는 것이 일반적이지만, MSA의 경우 서비스가 API에서부터 데이터베이스까지 분리되는 수직 분할(Vertical Slicing) 원칙에 따라서 독립된 데이터베이스를 갖는다.
   - 그래서 데이터베이스 종류가 서로 다른 데이터베이스들을 사용할 수 있다.
   - 하지만, 다른 컴포넌트의 데이터를 API 통신을 통해서만 가지고 올 수 있기 때문에 성능 상의 문제를 야기할 수 있고 이종의 데이터베이스 간의 트랜잭션을 묶을 수 없다는 문제점이 있다.
@@ -55,9 +55,9 @@ example) 온라인 쇼핑몰 어플리케이션이 있을 때, Tomcat 서버 내
       - API UX 관점에서도 불편하다.
       - 컴포넌트를 되도록 업무 단위로 작게 분할하는 작은 규모의(fine grained) 서비스를 지향하는 MSA의 특성 상 API의 수가 많을 수 밖에 없다.
       - 때문에 API를 사용하는 클라이언트에서 서버 간의 통신, 서버 간의 API 통신의 경우 P2P(Peer To Peer) 형태로 topology가 복잡해지고 거미줄 모양의 서비스 컴포넌트 간의 호출 구조는 문제를 일으킬 가능성이 높다.
-      - ![P2P method topology in MSA Component Call](../../assets/Network/10.PNG)
+      - ![P2P method topology in MSA Component Call](../../assets/Web/10.PNG)
       - 이러한 문제점을 해결하기 위해서 중앙에 서비스 버스와 같은 역할을 하는 채널을 배치하여, 전체 topology를 P2P에서 Hub & Spoke 방식으로 변환시켜 서비스 간 호출을 단순화하는 기능이 있다.
-      - ![Hub & Spoke method topology in MSA Component Call](../../assets/Network/11.PNG)
+      - ![Hub & Spoke method topology in MSA Component Call](../../assets/Web/11.PNG)
     - Orchestration
       - 여러 개의 서비스를 묶어서 하나의 새로운 서비스로 만드는 개념
       - ex : 물품 구매 + 포인트 적립
@@ -116,7 +116,7 @@ API 기반의 다수의 서비스를 하나의 트랜잭션으로 묶는 것은 
             - 팀 간의 커뮤니케이션이 원활하지 않아 협의에 걸리는 시간으로 인해 팀의 운영 속도가 저하된다.
           - Cross Functional Team 모델은 하나의 팀에 기획, UX, 개발, 인프라 운영 등 소프트웨어 시스템을 개발하는데 필요한 모든 역할을 하나의 팀에 구성하고 움직이는 모델. 각각의 서비스가 팀을 나누는 기준
             - 다른 팀에 대한 의존성이 없어져 빠른 서비스 개발이 가능하다.
-          - ![Cross Functional Team Model](../../assets/Network/12.PNG)
+          - ![Cross Functional Team Model](../../assets/Web/12.PNG)
         - You Build, You Run Devops
           - Devops (Development + Operation) : 개발과 운영을 하나의 조직에 합쳐놓는 구조
             - 개발과 운영이 분리되어 발생하는 의사소통의 문제점을 해결하고 개발이 운영을 고려하고 운영에서 발생하는 문제점과 고객의 피드백을 빠르게 수용하여 서비스 개선에 반영하는 모델

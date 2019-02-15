@@ -3,7 +3,7 @@ layout: post
 title:  "CORS Policy"
 description: "Cross Origin Resource Sharing Policy"
 date:   2019-02-11 21:40:00
-categories: Network
+categories: Web
 comments: true
 ---
 ## 1. Background
