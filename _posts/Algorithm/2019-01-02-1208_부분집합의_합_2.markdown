@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "[BOJ 1208] 부분집합의 합"
+title:  "[BOJ 1208] 부분집합의 합 2"
 date:   2019-01-02 23:40:00
 categories: Algorithm
 comments: true
 ---
-[[BOJ 1208] 부분집합의 합](https://www.acmicpc.net/problem/1208)
+[[BOJ 1208] 부분집합의 합 2](https://www.acmicpc.net/problem/1208)
 
 시간을 줄이는 방법을 차근차근 꼼꼼히 한 가지도 빠짐없이 고려해야 할 것 같다.
 결국 풀이도 떠올리지 못했고 재귀도 정말 못 짜는 것 같다.
