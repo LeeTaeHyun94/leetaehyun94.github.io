@@ -2,7 +2,7 @@
 layout: post
 title:  "Geometry(Point)"
 description: "Computational Geometry(Point)"
-date:   2019-02-17 21:50:00
+date:   2019-02-18 21:50:00
 categories: Algorithm
 comments: true
 ---
