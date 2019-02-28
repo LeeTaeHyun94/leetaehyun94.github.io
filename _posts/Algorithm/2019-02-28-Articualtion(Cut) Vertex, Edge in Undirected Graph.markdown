@@ -2,7 +2,7 @@
 layout: post
 title:  "Articualtion(Cut) Vertex, Edge in Undirected Graph"
 description: "Articualtion(Cut) Vertex, Edge in Undirected Graph"
-date:   2019-02-27 15:45:00
+date:   2019-02-28 15:55:00
 categories: Algorithm
 comments: true
 ---
