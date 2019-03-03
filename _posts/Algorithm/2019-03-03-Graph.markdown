@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Graph"
+description: "Graph"
+date:   2019-03-03 18:50:00
+categories: Algorithm
+comments: true
+---
+- 대칭(Symmetric) 관계 - 무방향 그래프, 전이(Transition) 관계 - 방향 그래프
+- 반사(Reflexive) 관계
+- 동치 (Equivalence Relation)
+- 분할 (Decomposition Partition)
