@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "WWW"
+description: "World Wide Web"
+date:   2019-03-12 19:25:00
+categories: Web
+comments: true
+---
+## 1. World Wide Web의 등장
+CERN(유럽 입자 물리학 연구소)의 팀 버너스 리 박사가 멀리 떨어져 있는 동료 연구자와 지식을 공요할 수 있도록 하는 WWW 시스템을 고안하였다.
+- 1989년 3월 HTTP의 탄생
+
+## 2. WWW를 구성하는 기술
+- HTML (HyperText Markup Language) : SGML을 기반으로 한 문서 기술 언어
+  - SGML (Standard Generalized Markup Language) : IBM에서 1960년대에 개발한 GML의 후속, 문서용 마크업 언어를 정의하기 위한 메타 언어
+- HTTP (HyperText Transfer Protocol) : 문서 전송 프로토콜
+- URL (Uniform Resource Locator) : 문서의 주소를 지정하는 방법
