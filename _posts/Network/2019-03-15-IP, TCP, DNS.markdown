@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "IP, TCP, DNS"
+description: "Internet Protocol, Transmission Control Protocol, Domain Name System"
+date:   2019-03-15 20:45:00
+categories: Network
+comments: true
+---
+## 1. IP (Internet Protocol)
+Network Layer에 속하며, 개개의 패킷을 상대방에게 전달하는 역할을 맡고 있다.
+- IP Address : 각 노드에 부여된 주소
+- MAC (Media Access Control) Address : 각 네트워크 카드에 할당된 고유의 주소
+- IP 주소와 MAC 주소는 서로 연관되어 있다.
+- IP 주소는 변경 가능하지만, MAC 주소는 기본적으로 변경할 수 없다.
+- ARP (Address Resolution Protocol) : 네트워크 상에서 IP 주소를 물리적 네트워크 주소로 대응(Bind)시키기 위해 사용되는 프로토콜
+  - 정확히 설명하자면, 실제로는 IP를 통해서 네트워크 통신을 하는 것이 아니라 IP 주소에 대응되는 물리적 네트워크 주소를 통해 네트워크 통신이 이루어지는데, 이 경우에 단 한번의 전송으로 통신이 끝나는 것이 아니라 ARP로 대응된 물리적 네트워크 주소를 통해 여러 개의 라우터를 거쳐 전달하는 형태로 통신하게 된다.
+  - 라우팅 (Routing) : 목적지까지 중계를 하는 도중에 컴퓨터, 라우터 등 네트워크 기기들은 최종 목적지가 아니라 최종 목적지까지 도착하기 위한 경유 목적지를 알고 있다. 이를 라우팅이라고 한다.
+    - 결론적으로, 어떤 컴퓨터나 네트워크 기기도 인터넷 전체를 상세하게 파악하고 있지는 않다.
