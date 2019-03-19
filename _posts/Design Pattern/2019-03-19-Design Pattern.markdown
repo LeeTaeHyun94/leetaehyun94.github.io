@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "Design Pattern"
+description: "Design Pattern"
+date:   2019-03-19 16:05:00
+categories: Java
+comments: true
+---
+## 1. Sequence Diagram
+
+* 객체들 사이의 메시지 송신과 그들의 순서
+  * ![객체의 3가지 표현](../../assets/Design_Pattern/1.PNG)
+* 메시지
+  * ![여러 가지 형태의 메시지 표현](../../assets/Design_Pattern/2.PNG)
+* ![예제](../../assets/Design_Pattern/3.PNG)
+* 프레임
+  * ![프레임을 사용한 순차 다이어그램](../../assets/Design_Pattern/4.PNG)
+* alt
+  * ![alternative](../../assets/Design_Pattern/5.PNG)
+* loop
+  * ![loop](../../assets/Design_Pattern/6.PNG)
+* 순차 다이어그램과 클래스 다이어그램
+  * ![순차 다이어그램 -> 클래스 다이어그램](../../assets/Design_Pattern/7.PNG)
+
+## 2. 디자인 패턴의 이해
+
+소프트웨어를 설계할 때 특정 맥락에서 자주 발생하는 고질적인 문제들이 발생했을 때 재사용할 수 있는 훌륭한 해결책
+
+- 디자인 패턴 구조
+  - Context : 문제가 발생하는 여러 상황을 기술한다. 즉, 패턴이 적용될 수 있는 상황을 나타낸다. 경우에 따라서는 패턴이 유용하지 못한 상황을 나타내기도 한다.
+  - 문제 : 패턴이 적용되어 해결될 필요가 있는 여러 디자인 이슈들을 기술한다. 이 때 여러 제약 사항과 영향력도 문제 해결을 위해 고려해야 한다.
+  - 해결 : 문제를 해결하도록 설계를 구성하는 요소들과 그 요소들 사이의 관계, 책임, 협력 관계를 기술한다. 해결은 반드시 구체적인 구현 방법이나 언어에 의존적이지 않으며 다양한 상황에 적용할 수 있는 일종의 템플릿이다.
+  - ![디자인 패턴의 구성 요소](../../assets/Design_Pattern/8.PNG)
+
+- GoF(Gang of Four) 디자인 패턴
+
+  - 감마/리차드 헬름/랄프 존슨/존 블리시디시
+  - 생성 패턴 : 객체의 생성에 관련된 패턴
+  - 구조 패턴 : 클래스를 조합해 더 큰 구조를 만드는 패턴
+  - 행위 패턴 : 알고리즘이나 책임의 분배에 관한 패턴
+
+- ![GoF 디자인 패턴의 분류](../../assets/Design_Pattern/9.PNG)
+
+- UML과 디자인 패턴
+
+  - Collaboration을 통해 디자인 패턴 기술
+  - 역할들의 상호작용을 추상화
+  - Collaboration Occurance
+
+  - ![Collaboration & Collaboration Occurance](../../assets/Design_Pattern/10.PNG)
