@@ -3,7 +3,7 @@ layout: post
 title:  "Design Pattern"
 description: "Design Pattern"
 date:   2019-03-19 16:05:00
-categories: Java
+categories: Design Pattern
 comments: true
 ---
 ## 1. Sequence Diagram
