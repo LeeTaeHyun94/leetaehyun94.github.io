@@ -8,6 +8,7 @@ comments: true
 ---
 ## 1. 암호화 알고리즘의 분류
 ![Encryption Algorithm](../../assets/Network/6.PNG)
+
 가장 먼저 분류되는 방식은 양방향과 단방향 방식이다.
 
 ### (1) 양방향 알고리즘
