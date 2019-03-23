@@ -6,8 +6,6 @@ date:   2019-03-21 18:10:00
 categories: Design_Pattern
 comments: true
 ---
-# 싱글턴 패턴
-
 ## 1. 프린터 관리자 만들기
 
 - 한 부서에서 1개의 프린터를 공유해서 사용하기
