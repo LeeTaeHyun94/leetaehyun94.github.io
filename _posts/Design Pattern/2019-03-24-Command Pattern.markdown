@@ -2,7 +2,7 @@
 layout: post
 title:  "Command Pattern"
 description: "Command Pattern"
-date:   2019-03-23 21:05:00
+date:   2019-03-24 23:15:00
 categories: Design_Pattern
 comments: true
 ---
