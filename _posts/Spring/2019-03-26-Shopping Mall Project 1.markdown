@@ -24,15 +24,70 @@ Ubuntu 18.04에서 작업했고, 이번 포스팅에서는 작업하는데 필�
 (5) sudo chmod -R 755 conf/ : conf 디렉토리의 권한 수정
 
 ## 2. Intellij에서 Spring MVC Project 생성하기
-- Spring MVC + Maven
+- Maven + Spring MVC
 
-  (1) Spring MVC 를 선택하고 프로젝트명을 입력한후 프로젝트를 생성한다.
+  (1) Maven 선택 > Create from archetype 체크 > org.apache.maven.archetypes:maven-archetype-webapp 선택하고 Next
 
-  (2) 좌측 project tree의 root directory를 우클릭 하여 Maven Framework를 추가한다.
+  (2) GroupId, ArtifactId 채워넣고 Next 누르다가 Finish
+
+  (3) pom.xml 파일에 의존성 추가 (spring-web, spring-webmvc)
   
-  (3) Project Structure 창에서 Artifacts 탭을 클릭한다.
+  (4) Spring 설정 파일 (src/main/resources/META-INF/spring/applicationContext.xml, dispatcher-servlet.xml) 추가, Mark Directory As Resources Root
+	- dispatcher-servlet.xml
+		```
+		<?xml version="1.0" encoding="UTF-8"?>
+		<beans xmlns="http://www.springframework.org/schema/beans"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xmlns:mvc="http://www.springframework.org/schema/mvc"
+			xmlns:context="http://www.springframework.org/schema/context"
+			xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+			<mvc:annotation-driven/>
+			<context:component-scan base-package="com.hyun.shopping_mall_example"/>
 
-  (4) 우측의 이용 가능한 Library(Spring, Spring MVC)를 더블 클릭
+			<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+				<property name="prefix" value="/"/>
+				<property name="suffix" value=".jsp"/>
+			</bean>
+		</beans>
+		```
+
+  (5) Source Directory (ex : src/main/java/com/hyun/{ArtifactId}) 추가, Mark Directory As Source Root
+
+  (6) web.xml 설정
+	```
+	<!DOCTYPE web-app PUBLIC
+	"-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+	"http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+	<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:META-INF/spring/applicationContext.xml</param-value>
+	</context-param>
+	
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>dispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:META-INF/spring/dispatcher-servlet.xml</param-value>
+		</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>dispatcher</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	</web-app>
+	```
 
 - Run Configuration 설정
 
@@ -41,5 +96,6 @@ Ubuntu 18.04에서 작업했고, 이번 포스팅에서는 작업하는데 필�
   (2) Server 탭의 Application server: `Configure...` 버튼을 클릭하고 Tomcat 설치한 디렉토리로 설정
 
   (3) Deployment 탭에서 Artifact 추가
+	- 이 때 Application context로 아무것도 설정하지 않으면 end-point에 프로젝트 이름이 추가되지 않는다.
 
 여기까지 하면 Intellij에서 만든 Spring MVC Project가 Tomcat에서 실행이 되는 것을 확인할 수 있다.
