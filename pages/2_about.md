@@ -27,7 +27,7 @@ See my project page for details.
 
 - 2016.12 ~ 2017.12 : Research Assistant in Intelligent System lab. (The Catholic University of Korea)
 - 2018.09 ~ 2019.01 : Research Assistant in Algorithm lab. (The Catholic University of Korea)
-- 2019.01 ~ ing : Software Engineer in Bearrobotics
+- 2019.01 ~ 2019.02.28 : Software Engineer in Bearrobotics
 
 ### 3. Skill
 
