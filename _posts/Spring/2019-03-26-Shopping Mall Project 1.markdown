@@ -32,7 +32,7 @@ Ubuntu 18.04에서 작업했고, 이번 포스팅에서는 작업하는데 필�
 
   (3) pom.xml 파일에 의존성 추가 (spring-web, spring-webmvc)
   
-  (4) Spring 설정 파일 (src/main/resources/META-INF/spring/applicationContext.xml, dispatcher-servlet.xml) 추가, Mark Directory As Resources Root
+  (4) Spring 설정 파일 (src/main/resources/spring/applicationContext.xml, src/main/resources/spring/appServlet/dispatcher-servlet.xml) 추가, Mark Directory As Resources Root
 	- dispatcher-servlet.xml
 		```
 		<?xml version="1.0" encoding="UTF-8"?>
@@ -53,7 +53,7 @@ Ubuntu 18.04에서 작업했고, 이번 포스팅에서는 작업하는데 필�
 		</beans>
 		```
 
-  (5) Source Directory (ex : src/main/java/com/hyun/{ArtifactId}) 추가, Mark Directory As Source Root
+  (5) Source Directory (ex : src/main/java/{groupId}/{ArtifactId}) 추가, Mark Directory As Source Root
 
   (6) web.xml 설정
 	```
@@ -66,7 +66,7 @@ Ubuntu 18.04에서 작업했고, 이번 포스팅에서는 작업하는데 필�
 
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:META-INF/spring/applicationContext.xml</param-value>
+		<param-value>classpath:spring/applicationContext.xml</param-value>
 	</context-param>
 	
 	<listener>
@@ -78,7 +78,7 @@ Ubuntu 18.04에서 작업했고, 이번 포스팅에서는 작업하는데 필�
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:META-INF/spring/dispatcher-servlet.xml</param-value>
+		<param-value>classpath:spring/appServlet/dispatcher-servlet.xml</param-value>
 		</init-param>
 	</servlet>
 	
@@ -96,6 +96,6 @@ Ubuntu 18.04에서 작업했고, 이번 포스팅에서는 작업하는데 필�
   (2) Server 탭의 Application server: `Configure...` 버튼을 클릭하고 Tomcat 설치한 디렉토리로 설정
 
   (3) Deployment 탭에서 Artifact 추가
-	- 이 때 Application context로 아무것도 설정하지 않으면 end-point에 프로젝트 이름이 추가되지 않는다.
+	- 이 때 Application context로 아무것도 설정하지 않으면(/) end-point에 프로젝트 이름이 추가되지 않는다.
 
 여기까지 하면 Intellij에서 만든 Spring MVC Project가 Tomcat에서 실행이 되는 것을 확인할 수 있다.
