@@ -3,7 +3,7 @@ layout: post
 title:  "Linked List"
 description: "Linked List"
 date:   2019-03-28 22:35:00
-categories: Algorithm_&_Data_Structure
+categories: Data_Structure
 comments: true
 ---
 ```
