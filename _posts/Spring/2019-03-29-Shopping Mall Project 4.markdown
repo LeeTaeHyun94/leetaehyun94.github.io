@@ -7,6 +7,7 @@ categories: Spring
 comments: true
 ---
 ## 1. Create Tables
+
 ### (1) User
 - id (primary key)
 - username
@@ -18,6 +19,7 @@ comments: true
 - zipcode
 - regDate
 - isEmailVerified
+
 ```
 create table user (
   id bigint not null auto_increment primary key,
@@ -42,6 +44,7 @@ create table user (
 - description
 - imgUrl
 - regDate
+
 ```
 create table goods (
   id bigint not null auto_increment primary key,
@@ -59,6 +62,7 @@ create table goods (
 - id (primary key)
 - name
 - categoryIdRef (foreign key)
+
 ```
 create table goods_category (
   id bigint not null auto_increment primary key,
@@ -79,6 +83,7 @@ alter table goods add constraint fk_goods_category foreign key (categoryId) refe
 ## 3. Create Value Objects in domain package
 
 ### (1) UserVO
+
 ```
 @Getter
 @Setter
@@ -97,6 +102,7 @@ public class UserVO {
 ```
 
 ### (2) GoodsVO
+
 ```
 @Getter
 @Setter
@@ -113,6 +119,7 @@ public class GoodsVO {
 ```
 
 ### (3) GoodsCategoryVO
+
 ```
 @Getter
 @Setter
