@@ -264,6 +264,7 @@ comments: true
 
 </mapper>
 ```
+
 ### (2) DAO, Service, Controller 추가
 - UserDAO
   
@@ -376,6 +377,7 @@ comments: true
       }
   }
   ```
+
 ### (3) 로그인, 회원가입 페이지 작성 (WEB-INF/views/user)
 - signup.jsp
   
