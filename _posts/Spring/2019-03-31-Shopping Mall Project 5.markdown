@@ -7,6 +7,7 @@ categories: Spring
 comments: true
 ---
 - 라이브러리 추가 (pom.xml)
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -191,17 +192,17 @@ comments: true
   </build>
 </project>
 ```
-
 - 웹 페이지의 공통 부분 작성 (WEB-INF/views/include)
   - header.jsp
+    
     ```
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <h1 class="title">
         <a href="/">Hyun</a>
     </h1>
     ```
-
   - nav.jsp
+    
     ```
     <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -228,8 +229,8 @@ comments: true
         </c:if>
     </ul>
     ```
-
   - footer.jsp
+    
     ```
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <ul>
@@ -242,6 +243,7 @@ comments: true
 ## 1. Signup, Signin, Signout
 
 ### (1) mapper 추가 (userMapper.xml)
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
@@ -262,9 +264,9 @@ comments: true
 
 </mapper>
 ```
-
 ### (2) DAO, Service, Controller 추가
 - UserDAO
+  
   ```
   @Repository
   public class UserDAO {
@@ -285,8 +287,8 @@ comments: true
       }
   }
   ```
-
 - UserService (Interface)
+  
   ```
   public interface UserService {
       public void signup(UserVO userVO) throws Exception;
@@ -294,6 +296,7 @@ comments: true
   }
   ```
 - UserServiceImpl
+  
   ```
   @Service
   public class UserServiceImpl implements UserService {
@@ -321,8 +324,8 @@ comments: true
       }
   }
   ```
-
 - UserController
+  
   ```
   @Controller
   @RequestMapping("/user")
@@ -375,6 +378,7 @@ comments: true
   ```
 ### (3) 로그인, 회원가입 페이지 작성 (WEB-INF/views/user)
 - signup.jsp
+  
   ```
   <%@ page contentType="text/html;charset=UTF-8" language="java" %>
   <html>
@@ -437,8 +441,8 @@ comments: true
       </body>
   </html>
   ```
-
 - signin.jsp
+  
   ```
   <%@ page contentType="text/html;charset=UTF-8" language="java" %>
   <html>
