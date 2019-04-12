@@ -2,7 +2,7 @@
 layout: post
 title:  "Design Principles of Programming Languages"
 description: "Design Principles of Programming Languages"
-date:   2019-04-11 18:23:00
+date:   2019-04-12 18:29:00
 categories: Programming_Languages
 comments: true
 ---
