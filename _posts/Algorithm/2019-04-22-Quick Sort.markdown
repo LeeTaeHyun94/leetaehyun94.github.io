@@ -56,19 +56,25 @@ void quick_sort(vector<int> arr, int left, int right) {
 OR
 
 ```c++
+void swap(int &a, int &b) {
+     int t = a;
+     a = b;
+     b = t;
+}
+
 void quick_sort(vector<int> arr, int left, int right) {
-     int l = left, r = right, t;
-     int pivot = arr[(left + right) / 2]; // 중앙값 선택
-     do {
-          while (arr[l] < pivot) l++;
-          while (arr[r] > pivot) r--;
-          if (i <= j) {
-               t = arr[l];
-               arr[l++] = arr[r];
-               arr[r--] = t;
+     if (left < right) {
+          int l = left, r = right, m = (l + r) / 2; // 중앙값 선택
+          swap(arr[m], arr[r]);
+          int pivot = arr[r]; // 중앙값 선택
+          while (l < r) {
+               while (arr[l] < pivot) l++;
+               while (l < r && pivot <= arr[r]) r--;
+               swap(arr[l], arr[r]);
           }
-     } while (l <= r);
-     if (left < r) quick_sort(arr, left, r);
-     if (i < right) quick_sort(arr, l, right);
+          swap(arr[l], arr[right]);
+          quick_sort(arr, left, l - 1);
+          quick_sort(arr, l + 1, right);
+     }
 }
 ```
