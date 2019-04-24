@@ -22,7 +22,7 @@ void swap(int &a, int &b) {
      b = t;
 }
 
-int concatenate(vector<int> arr, int left, int right, int pivotIndex) {
+int concatenate(vector<int> &arr, int left, int right, int pivotIndex) {
      int pivotValue = arr[pivotIndex];
      swap(arr[pivotIndex], arr[right]);
      int newPivotIndex = left;
@@ -32,7 +32,7 @@ int concatenate(vector<int> arr, int left, int right, int pivotIndex) {
      return newPivotIndex;
 }
 
-void quick_sort(vector<int> arr, int left, int right) {
+void quick_sort(vector<int> &arr, int left, int right) {
      if (left < right) {
           /*
                이 부분에서 피벗을 선택하는 알고리즘이 들어가게 되는데
@@ -62,7 +62,7 @@ void swap(int &a, int &b) {
      b = t;
 }
 
-void quick_sort(vector<int> arr, int left, int right) {
+void quick_sort(vector<int> &arr, int left, int right) {
      if (left < right) {
           int l = left, r = right, m = (l + r) / 2; // 중앙값 선택
           swap(arr[m], arr[r]);
