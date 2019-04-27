@@ -2,7 +2,7 @@
 layout: post
 title:  "Merge Sort"
 description: "Merge Sort"
-date:   2019-04-25 03:25:00
+date:   2019-04-26 03:25:00
 categories: Algorithm
 comments: true
 ---
