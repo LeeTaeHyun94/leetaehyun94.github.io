@@ -80,6 +80,6 @@ do {
     - 데커의 알고리즘, 크누스의 알고리즘, 램포트의 베이커리 알고리즘, 핸슨의 알고리즘, 다익스트라의 알고리즘
   - 프로그래밍 언어와 운영체제 수준에서 제공 : 세마포, 모니터
 - 하드웨어로 해결(저급 수준의 원자 연산)하는 방법
-  - TAS (TestAndSet)
+  - [TAS (TestAndSet)](https://leetaehyun94.github.io/posts/Method-of-Mutual-Exclusion-TAS/)
 
 자세한 내용을 다루기 위해 여러 개의 포스팅으로 나누어 올리도록 하겠습니다.
