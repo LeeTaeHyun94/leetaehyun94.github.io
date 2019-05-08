@@ -78,7 +78,7 @@ do {
 - 소프트웨어로 해결하는 방법
   - [알고리즘으로 해결](https://leetaehyun94.github.io/posts/Method-of-Mutual-Exclusion-Dekker-Algorithm/)
     - 데커의 알고리즘, 크누스의 알고리즘, 램포트의 베이커리 알고리즘, 핸슨의 알고리즘, 다익스트라의 알고리즘
-  - 프로그래밍 언어와 운영체제 수준에서 제공 : 세마포, 모니터
+  - 프로그래밍 언어와 운영체제 수준에서 제공 : [세마포](https://leetaehyun94.github.io/posts/Method-of-Mutual-Exclusion-Semaphore/), 모니터
 - 하드웨어로 해결(저급 수준의 원자 연산)하는 방법
   - [TAS (TestAndSet)](https://leetaehyun94.github.io/posts/Method-of-Mutual-Exclusion-TAS/)
 
