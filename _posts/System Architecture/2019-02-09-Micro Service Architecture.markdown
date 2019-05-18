@@ -3,7 +3,7 @@ layout: post
 title:  "Micro Service Architecture"
 description: "Micro Service Architecture"
 date:   2019-02-09 18:00:00
-categories: Web
+categories: System_Architecture
 comments: true
 ---
 ## 1. Background
