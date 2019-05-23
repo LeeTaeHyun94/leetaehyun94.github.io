@@ -34,7 +34,7 @@ comments: true
   - 미들웨어로서 원격 프로시저를 찾아서 호출자가 알기 쉽게 사용할 수 있도록 해주는 연결 메커니즘을 구현한다.
   - 일반적으로 이전에는 프로시저 기반 프로그램만을 처리했지만, 현재는 객체 기반 구성 요소도 포함한다.
 - ORB (Object Request Broker) 기반 : 응용 프로그램의 객체를 배포하여 이종의 네트워크 간에 공유할 수 있도록 해준다.
-- MOM (Message Oriented Middleware) 기반 : 분산 응용 프로그램 간에 메시지를 주고받으면서 데이터를 전달하고 교환할 수 있도록 해준다.
+- [MOM (Message Oriented Middleware) 기반](https://leetaehyun94.github.io/posts/Message-Oriented-Middleware/) : 분산 응용 프로그램 간에 메시지를 주고받으면서 데이터를 전달하고 교환할 수 있도록 해준다.
   - 비동기식 메시지 교환을 통해 통신을 가능하게 한다.
 
 이러한 모든 모델에서 한 소프트웨어 구성 요소가 네트워크를 통해 다른 구성 요소의 동작에 영향을 줄 수 있다.
