@@ -7,6 +7,7 @@ categories: OS
 comments: true
 ---
 커널 영역의 기능을 사용자 모드가 사용 가능하게, 사용자 어플리케이션이 커널 내부 하드웨어나 데이터에 간접적으로 접근해서 요구하는 기능을 수행하는 시스템 호출 인터페이스
+
 ![open System Call Process](../../assets/OS/17.PNG)
 
 ## 1. 유형
