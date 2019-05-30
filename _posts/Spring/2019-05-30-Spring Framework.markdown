@@ -29,7 +29,7 @@ comments: true
 #### 스프링 프레임워크의 핵심은 크게 위의 세 가지 역할을 수행하는 하나의 컨테이너라고 볼 수 있다.
 
 ## 3. 구조
-![Structure of Spring Framework](../../assets/Spring/2.PNG)
+![Structure of Spring Framework](../../assets/Spring/2.PNG)  
 스프링 프레임워크는 약 20 개의 모듈로 구조화되어 있다.
 
 ### (1) Core Container
