@@ -35,7 +35,7 @@ comments: true
 ### (1) Core Container
 - Core, Beans
   - IoC와 DI를 포함하여 프레임워크의 기본이 되는 기능을 제공한다.
-  - BeanFactory는 팩토리 메서드 패턴을 이용하여 구현되어 있고, 이를 통해 Java Bean에 대한 싱글턴 패턴 구현이나, 실제 프로그램 로직에서 의존성에 대한 설정과 명세를 분리할 수 있다.
+  - BeanFactory는 팩토리 메서드 패턴을 이용하여 구현되어 있고, 이를 통해 Java Bean에 대한 싱글턴 패턴 구현없이 싱글턴 상태를 유지해주고 실제 프로그램 로직에서 의존성에 대한 설정과 명세를 분리할 수 있다.
 - Context : Beans 모듈의 특징을 상속받고 전역화, 이벤트 전달, 리소스 적재, Servlet Container Context의 투명한 생성에 대한 기능들을 지원한다.
 - Expression Language : 런타임 시 객체를 조회하고 조작하는 표현 언어
   - Property Getter/Setter, 속성 할당, 메서드 호출, 배열, 컬렉션과 인덱서의 컨텍스트 접근, 논리적/산술적 연산자, 이름 있는 변수, 스프링의 IoC 컨테이너에서 이름으로 객체를 획득하는 기능 등을 지원한다.
