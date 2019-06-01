@@ -71,3 +71,33 @@ HTTP 통신은 Request와 Response로 이루어진다.
       - 키 교환, 인증 : 공개키 방법을 사용하거나, 미리 공유된 키를 사용할 수도 있다. 메시지 인증 코드(MAC)를 HMAC 해시 함수로 생성
   - 기존 규격에서는 하나의 요청을 처리하고 4-way Handshake를 거친 후에야 통신이 종료되고 다음 통신으로 넘어갔지만, 2.0에서는 스트림을 엶으로써 필요한 정보를 계속 요청하거나 수신할 수 있다. 이 과정에서 헤더는 압축되어 표현된다. 연결을 끊고 새로 만드는 오버헤드를 절감하여 기존 규격보다 빠른 속도의 통신을 제공할 수 있다.
   - 클라이언트가 특정 경로로 요청을 보냈을 때 부가적으로 요청해야 할 자원들(웹페이지의 경우 CSS나 JS 파일)을 서버에서 미리 알고 푸시하는 서버 푸시 기능으로도 기존의 규격보다 오버헤드를 절감하여 빠른 속도의 통신을 제공할 수 있다.
+
+## 4. HTTP Method
+- GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD, TRACE
+
+## 5. HTTP Response Code
+- 100 번대 : 단순 정보
+  - 100 Continue : 임시 응답으로서, 지금까지의 상태가 양호하며 클라이언트가 계속해서 요청을 하거나, 이미 요청을 완료한 경우에 무시해도 된다.
+  - 101 Switching Protocol : 클라이언트가 보낸 Upgrade 요청 헤더에 대한 응답에 들어가며, 서버에서 프로토콜을 변경할 것을 알려준다.
+- 200 번대 : 요청 성공
+  - 200 OK : 요청이 성공적으로 처리되었음을 알린다. 성공의 의미는 HTTP Method에 따라 다르다.
+    - GET : 리소스를 불러와서 메시지 바디에 전송되었음.
+    - HEAD : 개체 헤더가 메시지 바디에 있음.
+    - PUT or POST : 수행 결과에 대한 리소스가 메시지 바디에 전송되었음.
+    - TRACE : 메시지 바디는 서버에서 수신한 요청 메시지를 포함하고 있음.
+  - 201 Created : 요청이 성공적으로 처리되었으며, 그 결과로 새로운 리소스가 생성되었음을 알려준다. 일반적으로 POST, PUT 요청 이후에 응답하는 코드
+  - 202 Accepted
+  - 203 Non-Authoritative Information
+  - 204 No Content
+- 300 번대 : 변경
+  - 301 Moved Temporarily
+  - 302 Found
+  - 304 Unchanged
+- 400 번대 : 요청(클라이언트) 측 오류
+  - 400 Bad Request
+  - 401 Unauthorized
+  - 403 Forbidden
+  - 404 Not Found
+- 500 번대 : 서버 측 오류
+  - 500 Internal Server Error
+  - 503 Bad Gateway
