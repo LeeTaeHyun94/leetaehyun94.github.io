@@ -28,6 +28,7 @@ See my project page for details.
 - 2016.12 ~ 2017.12 : Research Assistant in Intelligent System lab. (The Catholic University of Korea)
 - 2018.09 ~ 2019.01 : Research Assistant in Algorithm lab. (The Catholic University of Korea)
 - 2019.01 ~ 2019.02.28 : Software Engineer in Bearrobotics
+- 2019.06.24 ~ 2019.08.09 : Software Engineer in Samsung Electronics Mobile Communications (Internship)
 
 ### 3. Skill
 
@@ -56,7 +57,10 @@ See my project page for details.
   - Oracle DBMS
   - mongoDB
   - SQLite3
+  - Riak-KV
 - Infra
+  - Docker
+  - Consul
   - Amazon Web Service
   - Google Cloud Platform
   - Phabricator
