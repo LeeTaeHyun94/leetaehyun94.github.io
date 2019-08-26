@@ -52,8 +52,12 @@ CORS Request는 두 가지 기준으로 각각 두 가지 종류로 나뉜다.
 
   - Preflight Request
     - Simple Request에 해당하지 않는 경우는 모두 Preflight Request 방식이다.
-    - GET, HEAD, POST, PUT, DELETE, etc...
-    - 모든 Content-type
+    - GET, HEAD, POST 메서드를 제외한 나머지 메서드 (PUT, PATCH, TRACE, DELETE)
+      - 모든 Content-type
+    - POST 메서드의 경우, Content-type이 아래 세 가지 외의 다른 값을 가질 때 사전 요청이 수행된다.
+      - application/x-www-form-urlencoded
+      - multipart/form-data
+      - text/plain
     - 커스텀 헤더 O
     - 한 번의 요청에 아래의 과정을 거친다.
       - 예비 요청(Preflight Request) -> 서버 -> 1 Response

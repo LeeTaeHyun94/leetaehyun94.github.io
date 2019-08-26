@@ -1,8 +1,8 @@
 <head>
     <meta charset="utf-8">
-    <link href="/static/img/favicon.ico" rel="icon" type="image/x-icon"/>
-    <meta name="google-site-verification" content="eVzEUaq2XMgJ1riMnrgd633Pz0Bxrixe2fWto0gAqyw"/>
-    <meta name="naver-site-verification" content="5efb2a91de62dd01c5b40fdd7e7ca7164cf0ab58"/>
+    <link href="/static/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <meta name="google-site-verification" content="eVzEUaq2XMgJ1riMnrgd633Pz0Bxrixe2fWto0gAqyw" />
+    <meta name="naver-site-verification" content="5efb2a91de62dd01c5b40fdd7e7ca7164cf0ab58" />
     <!--<meta property="og:type" content="website">-->
     <!--<meta property="og:title" content="페이지 제목">-->
     <!--<meta property="og:description" content="페이지 설명">-->
@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description"
-          content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+        content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "
@@ -26,13 +26,8 @@
     /static/css/index.css" | prepend: site.baseurl }}">
     <script type="text/javascript" src="{{ "
     /static/js/jquery-1.11.1.min.js" | prepend:site.baseurl }}"></script>
-    <
-    script
-    type = "text/javascript"
-    src = "{{ " / static
-    /js/
-    bootstrap.min.js
-    " | prepend:site.baseurl }}" ></script>
+    <script type="text/javascript" src="{{ "
+    /static/js/bootstrap.min.js" | prepend:site.baseurl }}"></script>
     <link rel="stylesheet" type="text/css" href="/static/css/monokai_sublime.min.css">
     <script type="text/javascript" src="/static/js/highlight.min.js"></script>
 
@@ -46,6 +41,5 @@
 
     <script type="text/javascript" src="{{"
     /static/js/index.js" | prepend:site.baseurl}}"></script>
-    <
-    script > hljs.initHighlightingOnLoad();</script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
