@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "[Algospot] FESTIVAL - 록 페스티벌"
-date:   2019-01-02 23:40:00
+description:  "[Algospot] FESTIVAL - 록 페스티벌"
+date:   2019-08-27 23:40:00
 categories: Algorithm
 comments: true
 ---
