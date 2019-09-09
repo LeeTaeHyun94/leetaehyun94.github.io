@@ -20,4 +20,29 @@ comments: true
 - 화면 정리 : `clear`
 - 온라인 매뉴얼 : `man`
 - 명령어에 대한 간단한 설명 : `whatis`
-- 
+- 현재 작업 디렉터리 출력 : `pwd` (print working diretory)
+- 디렉터리 이동 : `cd [directory]` (change directory)
+- 명령어의 경로 확인 : `which [command]`
+- 디렉터리 리스트 : `ls(or dir) [-aslFR] [directory or file]` (list)
+  - a (all) : 숨겨진 파일을 포함하여 모든 파일을 리스트한다.
+  - s (size) : 파일의 크기를 KB 단위로 출력
+  - l (long) : 파일의 상세 정보를 출력
+  - F : 파일의 종류를 표시하여 출력
+  - R (Recursive) : 모든 하위 디렉터리들을 리스트한다.
+- 디렉터리 생성 : `mkdir [-p] [directory]` (make directory)
+  - p : 중간 디렉터리 자동 생성 옵션
+- 디렉터리 삭제 : `rmdir [directory]` (remove directory)
+  - 빈 디렉터리만 삭제 가능할 수 있다.
+- GNOME이 제공하는 GUI 기반 문서 편집기 : `gedit [file] &`
+- 표준 입력 내용을 모두 파일에 저장 : `cat > [file]`
+  - 파일이 없으면 새로 생성
+- 파일 크기가 0인 이름만 있는 빈 파일 생성 : `touch [file]`
+- 파일 내용을 화면에 그대로 출력 : `cat [-n] [file]`
+  - 파일을 지정하지 않으면 표준 입력 내용을 화면에 그대로 출력한다.
+- 파일 내용을 페이지 단위로 화면에 출력 : `more [file]`
+- 파일의 앞부분을 화면에 출력 : `head [-n] [file]`
+  - 파일을 지정하지 않으면 표준 입력 내용을 대상으로 한다.
+- 파일의 뒷부분을 화면에 출력 : `tail [-n] [file]`
+  - 파일을 지정하지 않으면 표준 입력 내용을 대상으로 한다.
+- 파일에 저장된 줄(l), 단어(w), 문자(c)의 개수를 출력 : `wc [-lwc] [file]` (word count)
+  - 파일을 지정하지 않으면 표준 입력 내용을 대상으로 한다.
