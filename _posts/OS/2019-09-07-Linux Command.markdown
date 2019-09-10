@@ -46,3 +46,26 @@ comments: true
   - 파일을 지정하지 않으면 표준 입력 내용을 대상으로 한다.
 - 파일에 저장된 줄(l), 단어(w), 문자(c)의 개수를 출력 : `wc [-lwc] [file]` (word count)
   - 파일을 지정하지 않으면 표준 입력 내용을 대상으로 한다.
+- 파일 복사
+  - ```
+    $ cp [file 1] [file 2] // file 1을 file 2에 복사
+    $ cp [file] [directory] // file을 지정된 directory에 복사
+    $ cp [file 1] ... [file n] [directory] // 여러 개의 file을 지정된 directory에 복사
+    $ cp -r [directory 1] [directory 2] // r(recursion) 옵션을 사용해 directory 1 전체를 directory 2에 복사 (하위 디렉터리를 포함하여 복사)
+    ```
+  - i : 대화형 옵션 (명령을 수행할 것인지 한 번 더 확인)
+  - 복사 대상 파일과 이름이 같은 파일이 이미 존재하면 덮어쓰기
+- 파일 이동
+  - ```
+    $ mv [file] [directory] // file을 지정된 directory로 이동
+    $ mv [file 1] ... [file n] [directory] // 여러 개의 file을 지정된 directory로 이동
+    $ mv [directory 1] [directory 2] // directory 1을 directory 2로 이름 변경
+    ```
+  - i : 대화형 옵션
+  - 이동 대상 파일과 이름이 같은 파일이 이미 존재하면 덮어쓰기
+- 파일 삭제
+  - ```
+    $ rm [file] // 파일 삭제
+    $ rm -r [directory] // 디렉터리 전체 삭제
+    ```
+  - i : 대화형 옵션
