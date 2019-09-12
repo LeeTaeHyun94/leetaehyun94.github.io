@@ -69,3 +69,9 @@ comments: true
     $ rm -r [directory] // 디렉터리 전체 삭제
     ```
   - i : 대화형 옵션
+- 링크
+  - ```
+    $ ln [-s] [file 1] [file 2] file 1에 대한 새로운 이름(링크)으로 file 2 생성
+    $ ln [-s] [file] [directory] file에 대한 링크를 지정된 디렉터리에 같은 이름으로 생성
+    ```
+  - s : 이 옵션을 붙이면 심볼릭 링크 파일, 없으면 하드 링크
