@@ -75,3 +75,4 @@ comments: true
     $ ln [-s] [file] [directory] file에 대한 링크를 지정된 디렉터리에 같은 이름으로 생성
     ```
   - s : 이 옵션을 붙이면 심볼릭 링크 파일, 없으면 하드 링크
+- 파일의 종류에 대한 자세한 정보 출력 : `file [file]`
