@@ -56,3 +56,9 @@ comments: true
   - 파일 크기 2088(Byte)
   - 최종 수정 시간 4월 16일 13:37 : 파일을 생성 혹은 마지막으로 수정한 시간
   - 파일 이름 cs1.txt
+
+# 6. 파일 접근 권한 (File Permission Mode)
+- ![File Permission Mode](../../assets/OS/24.PNG)
+- 소유자(owner)/그룹(group)/기타(others)로 구분하여 관리한다.
+  - 예 : rwxr-xr-x (755)
+    - ![File Permission Mode](../../assets/OS/25.PNG)
