@@ -62,3 +62,4 @@ comments: true
 - 소유자(owner)/그룹(group)/기타(others)로 구분하여 관리한다.
   - 예 : rwxr-xr-x (755)
     - ![File Permission Mode](../../assets/OS/25.PNG)
+  - ![File Permission Mode Example](../../assets/OS/26.PNG)
