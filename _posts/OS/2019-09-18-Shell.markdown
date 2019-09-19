@@ -12,19 +12,20 @@ comments: true
 - 명령어 처리기로서 사용자로부터 명령어를 입력받아 이를 처리한다.
 
 # 2. 종류
-- 본 쉘 (Bourne Shell)
+- 본 쉘 (Bourne Shell) : /bin/sh
   - 벨 연구소의 스티븐 본(Steven Bourne)에 의해 개발
   - 유닉스에서 기본 쉘로 사용된다.
-- 콘 쉘 (Korn Shell) : 1980년대에 벨 연구소에서 본 쉘을 확장하여 만듦
-- Bash 쉘 (Bourne again Shell)
+- 콘 쉘 (Korn Shell) : /bin/ksh
+  - 1980년대에 벨 연구소에서 본 쉘을 확장하여 만듦
+- Bash 쉘 (Bourne again Shell) : /bin/bash
   - GNU에서 본 쉘을 확장하여 개발한 쉘
   - 리눅스, 맥 OS X에서 기본 쉘로 사용되면서 널리 보급되었다.
   - 명령어의 구문은 본 쉘 명령어 구문을 확장하였다.
-- C 쉘 (C Shell)
+- C 쉘 (C Shell) : /bin/csh
   - 버클리 대학의 빌 조이(Bill Joy)에 의해 개발
   - 쉘의 핵심 기능에 C 언어의 특징을 더했다.
   - BSD 계열의 유닉스에서 많이 사용된다.
-  - 최근에는 이를 개선한 tcsh이 개발되어 사용되고 있다.
+  - 최근에는 이를 개선한 tcsh이 개발되어 사용되고 있다. (/bin/tcsh)
 
 # 3. 로그인 쉘
 - 로그인하면 자동으로 실행되는 쉘
