@@ -128,3 +128,9 @@ comments: true
     $ chgrp [-R] [group] [file or directory] // 파일 혹은 디렉터리의 그룹을 지정된 그룹으로 변경
     ```
   - R : 지정된 디렉터리 내 모든 파일과 디렉터리에 대해서도 그룹을 변경할 수 있는 옵션
+
+- 쉘 변경
+  - /bin 디렉터리 경로는 환경 변수로 지정되어 있으므로 변경할 쉘의 이름만 입력하여 실행하면 된다.
+  - 본 쉘 (sh), 콘 쉘 (ksh), Bash 쉘 (bash), C 쉘 (csh), tcsh
+
+- 로그인 쉘 변경 (change shell) : chsh
