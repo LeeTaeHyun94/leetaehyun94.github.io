@@ -133,4 +133,12 @@ comments: true
   - /bin 디렉터리 경로는 환경 변수로 지정되어 있으므로 변경할 쉘의 이름만 입력하여 실행하면 된다.
   - 본 쉘 (sh), 콘 쉘 (ksh), Bash 쉘 (bash), C 쉘 (csh), tcsh
 
-- 로그인 쉘 변경 (change shell) : chsh
+- 로그인 쉘 변경 (change shell) : `chsh`
+
+- 쉘 지역 변수 설정 : `$ [variable name]=[value(string)]`
+  - 지역 변수는 현재 사용 중인 터미널에서만 사용가능하다.
+
+- 환경 변수 보기 : `env`
+
+- 쉘 환경 변수 설정 : `$ export [variable name]=[value(string)]`
+  - 환경 변수는 시스템 전체에 적용된다.
