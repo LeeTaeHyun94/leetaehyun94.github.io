@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Linux Command"
-description: "Linux Command"
+title: "File & Directory"
+description: "File & Directory"
 date: 2019-09-07 13:25:00
 categories: OS
 comments: true
