@@ -142,3 +142,24 @@ comments: true
 
 - 쉘 환경 변수 설정 : `$ export [variable name]=[value(string)]`
   - 환경 변수는 시스템 전체에 적용된다.
+
+- 전면 처리 : `$ [command]`
+
+- 후면 처리 : `$ [command] &`
+
+- 후면 작업 확인 : `$ jobs [job number]`
+  - 작업 번호를 넣지 않으면 현재 실행 중인 전체 작업 목록을 출력한다.
+
+- 후면 작업을 전면 작업으로 전환 : `$ fg [job number]`
+
+- 출력 재지정 (output redirection) : `$ [command] > [file]`
+  - 명령어의 표준 출력을 화면 대신에 파일에 저장한다.
+
+- 출력 추가 : `$ [command] >> [file]`
+  - 명령어의 표준 출력을 화면 대신에 파일에 추가한다.
+
+- 입력 재지정 (input redirection) : `$ [command] < [file]`
+  - 명령어의 표준 입력을 키보드 대신에 파일에서 받는다.
+
+- 오류 재지정 (output redirection) : `$ [command] 2> [file]`
+  - 명령어의 표준 오류를 화면 대신에 파일에 저장한다.
