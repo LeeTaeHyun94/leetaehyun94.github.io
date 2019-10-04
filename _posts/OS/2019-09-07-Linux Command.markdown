@@ -199,9 +199,9 @@ comments: true
 
 - 실행 중지 : `Ctrl-Z`
 
-- 후면 작업의 전면 전환 (foreground) : `$ fg %[Job ID]`
+- 후면 작업의 전면 전환 (foreground) : `$ fg %[JobID]`
 
-- 전면 작업의 후면 전환 (background) : `$ bg %[Job ID]`
+- 전면 작업의 후면 전환 (background) : `$ bg %[JobID]`
   - 작업 번호에 해당하는 중지된 작업을 후면 작업으로 전환하여 실행한다.
   - 전면 실행 중인 작업을 `Ctrl-Z`키로 실행 중지시킨 후 bg 명령어를 사용한다.
 
@@ -212,7 +212,7 @@ comments: true
       - find . -name test.c -print | mail [user] &
   - 후면 작업의 입력 : `$ [command] < [input file] &`
 
-- 프로세스 끝내기 : `$ kill [PID]`, `$ kill %[Job ID]`
+- 프로세스 끝내기 : `$ kill [PID]`, `$ kill %[JobID]`
   - PID 혹은 작업 번호에 해당하는 프로세스를 강제로 종료한다.
 
 - 프로세스 기다리기 : `$ wait [PID]`
@@ -234,3 +234,8 @@ comments: true
       - p : 해당 프로세스의 PID를 지정한다.
 
 - `$ id [UID]` : 사용자의 실제 ID와 유효 사용자 ID, 그룹 ID 등을 보여준다.
+
+- 시그널 리스트 : `$ kill -l`
+
+- 시그널 보내기 : `$ kill -[signal] [PID]`, `$ kill -[signal] [JobID]`
+  - PID 혹은 작업 번호로 지정된 프로세스에 원하는 시그널을 보낸다. 시그널을 명시하지 않으면 SIGTERM 시그널을 보내 프로세스를 강제 종료한다.
