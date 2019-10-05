@@ -239,3 +239,52 @@ comments: true
 
 - 시그널 보내기 : `$ kill -[signal] [PID]`, `$ kill -[signal] [JobID]`
   - PID 혹은 작업 번호로 지정된 프로세스에 원하는 시그널을 보낸다. 시그널을 명시하지 않으면 SIGTERM 시그널을 보내 프로세스를 강제 종료한다.
+
+- 호스트명 : `$ hostname`
+  - 사용 중인 시스템의 호스트명을 출력
+
+- IP 주소 : `$ ip addr`
+  - 사용 중인 시스템의 IP 주소를 출력
+
+- `$ nslookup [hostname]` (name server lookup)
+  - 지정된 호스트의 IP 주소를 얄려준다.
+  - 도메인 이름 서버(DNS, Domain Name Server)에 호스트명에 대해 질의
+
+- 사용자 정보 : `$ finger [username]`
+  - 지정된 사용자에 대한 보다 자세한 정보를 알려준다.
+
+- 메시지 보내기 : `$ write [username] [terminal_name]`
+  - 현재 로그인되어 있는 다른 사용자에게 메시지를 보낸다.
+
+- 전체 메시지 (write all) : `$ wall [file]`
+  - 현재 로그인되어 있는 모든 사용자에게 메시지를 보낸다.
+  - 파일 내용도 메시지로 보낼 수 있다.
+
+- ftp 명령어를 이용하여 파일 전송 : `$ ftp -n [hostname]`
+  - 호스트명으로 지정된 FTP 서버에 접속하여 파일을 업로드/다운로드한다.
+  - ftp 내부 명령어
+    - `!command` : 로컬 호스트에서 명령어 실행
+    - `lcd path` : 로컬 호스트의 작업 디렉토리 변경
+    - `cd path` : 원격 호스트의 작업 디렉토리 변경
+    - `get [file]` : 해당 파일을 다운로드
+    - `mget [file1, file2, ...]` : 여러 파일들을 다운로드한다. 대표 문자 사용 가능
+    - `put [file]` : 해당 파일을 업로드
+    - `mput [file1, file2, ...]` : 여러 파일들을 업로드한다. 대표 문자 사용 가능
+    - `help` : 도움말
+    - `ls [path]` : 원격 호스트의 해당 디렉토리 리스트
+    - `pwd` : 원격 호스트에서 현재 작업 디렉토리 출력
+    - `quit` : 종료
+    - `ascii` : 전송 모드를 아스키 모드(ascii mode)로 설정 (기본 설정이며 텍스트 파일 전송 시 사용)
+    - `bin` : 전송 모드를 바이너리 모드(binary mode)로 설정 (실행 파일, 이진 파일 전송 시 사용)
+
+- sftp 명령어를 이용하여 파일 전송 : `$ sftp -n [hostname]`
+  - 호스트명으로 지정된 SFTP 서버에 접속하여 파일을 업로드/다운로드한다.
+
+- `$ telnet [hostname]`, `$ telnet [ip_address]` : 지정된 원격 호스트에 원격으로 접속한다.
+
+- `$ ssh [username]@[hostname]`, `$ ssh -l [username] [hostname]` : 지정된 원격 호스트에 사용자명으로 원격 접속한다.
+
+- 원격 명령 실행 : `$ ssh [hostname] [command]`
+
+- 원격 컴퓨터의 상태를 확인 : `$ ping [hostname]`
+  - IP 네트워크를 통해 지정된 원격 호스트가 도달 가능한지 테스트하여 상태를 확인
