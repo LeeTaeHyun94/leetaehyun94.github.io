@@ -30,7 +30,7 @@ comments: true
 
 - 디렉터리 이동 : `cd [directory]` (change directory)
 
-- 명령어의 경로 확인 : `which [command]`
+- 명령어의 경로 확인 : `which [command]`, `whereis [command]/[filename]`
 
 - 디렉터리 리스트 : `ls(or dir) [-aslFR] [directory or file]` (list)
   - a (all) : 숨겨진 파일을 포함하여 모든 파일을 리스트한다.
@@ -377,3 +377,12 @@ comments: true
 - 파일 합병 (paste) : `$ paste [-s] [-d [seperated_character]] [file]`
   - 여러 파일들을 줄 단위로 합병하여 하나의 파일을 만든다.
   - s 옵션은 한 파일 끝에 다른 파일의 내용을 덧붙인다.
+
+- 사용자 계정 변경 : `$ su [-] [username]`
+  - 옵션 - : 변경할 사용자의 환경 초기화 파일 실행
+
+- 파일 디렉토리 묶기 (아카이브) : `$ tar -[ctxzvf] [archieve_name]`
+  - 옵션
+    - c : 아카이브 생성
+    - t : 아카이브 내용 보기
+    - x : 아카이브 파일 풀기
