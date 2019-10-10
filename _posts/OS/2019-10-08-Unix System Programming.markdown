@@ -54,3 +54,43 @@ comments: true
 - 저장하지 않고 종료 : `:q!`
 - 화면 다시 표시 : Ctrl + l
 - 행 번호 없애기 : `:set nonu`
+
+## 3. 컴파일 환경
+- Compile : 텍스트로 작성한 프로그램을 시스템이 이해할 수 있는 기계어로 변환하는 과정
+  - 일반적으로 컴파일 과정과 라이브러리 링크 과정을 묶어서 수행하는 것을 의미한다.
+- GCC (GNU C Compiler)
+- Makefile : 소스 파일이 여러 개를 묶어서 실행 파일을 생성하는 도구
+  - make 명령은 Makefile의 내용에 따라 컴파일
+
+## 4. 오류 처리 함수
+- 오류 메시지 출력
+  - void perror(const char *s); (<stdio.h>)
+  - char *strerror(int errnum); (<string.h>)
+
+## 5. 파일 입출력
+- 일반 파일 : 텍스트, 바이너리 형태의 데이터를 저장한 파일
+- 특수 파일 : 데이터 전송, 장치 접근에 사용하는 파일
+- Low-level File I/O
+  - 파일 지시자 : int fd (파일 기술자)
+  - 특징
+    - 더 빠르다.
+    - 바이트 단위로 읽고 쓴다.
+    - 특수 파일에 대한 접근이 가능하다.
+  - 저수준 함수 : open, close, read, write, dup, dup2, fcntl, lseek, fsync
+- High-level File I/O
+  - 파일 지시자 : FILE *fp (파일 포인터)
+  - 특징
+    - 사용하기 쉽다.
+    - 버퍼 단위로 읽고 쓴다.
+    - 데이터 입출력의 동기화가 쉽다.
+    - 여러 가지 형식을 지원한다.
+  - 고수준 함수 : fopen, fclose, fread, fwrite, fputs, fgets, fprintf, fscanf, freopen, fseek
+
+### (1) 저수준 파일 입출력
+- 파일 기술자
+  - 현재 열려있는 파일을 구분하는 정수값
+  - 저수준 파일 입출력에서 열린 파일을 참조하는데 사용
+  - 0 : 표준 입력, 1 : 표준 출력, 2 : 표준 오류
+    - ![파일 기술자](../../assets/OS/36.PNG)
+
+### (2) 고수준 파일 입출력
