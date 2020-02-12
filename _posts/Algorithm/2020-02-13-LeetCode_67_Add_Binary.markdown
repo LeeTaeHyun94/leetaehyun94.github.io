@@ -6,7 +6,7 @@ date: 2020-02-13 18:30:00
 categories: Algorithm
 comments: true
 ---
-[[LeetCode 67] Add Binary(https://leetcode.com/problems/add-binary/)
+[[LeetCode 67] Add Binary](https://leetcode.com/problems/add-binary/)
 
 ## 문제 요약
 
