@@ -11,7 +11,7 @@ permalink: /projects/
 # All my projects
 Following are projects started by me.
 
-[Project Portfolio](./../downloads/이태현 Portfolio.PPTX)
+[Project Portfolio](./../downloads/leethyun's Portfolio v2.pdf)
 
 ## Electronic Warfare Simulator
 * 2016.12 ~ 2017.12
