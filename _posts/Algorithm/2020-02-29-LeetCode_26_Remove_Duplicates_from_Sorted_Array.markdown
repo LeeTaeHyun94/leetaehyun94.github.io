@@ -2,7 +2,7 @@
 layout: post
 title:  "[LeetCode 26] Remove Duplicates from Sorted Array"
 description:  "[LeetCode 26] Remove Duplicates from Sorted Array"
-date:   2020-03-01 18:30:00
+date:   2020-02-29 18:30:00
 categories: Algorithm
 comments: true
 ---

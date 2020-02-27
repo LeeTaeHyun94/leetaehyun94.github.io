@@ -2,7 +2,7 @@
 layout: post
 title: "[LeetCode 21] Merge Two Sorted Lists"
 description: "[LeetCode 21] Merge Two Sorted Lists"
-date: 2020-03-01 18:30:00
+date: 2020-02-28 18:30:00
 categories: Algorithm
 comments: true
 ---
