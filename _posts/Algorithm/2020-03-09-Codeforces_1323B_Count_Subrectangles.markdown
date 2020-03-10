@@ -24,36 +24,36 @@ n과 m의 범위가 최대 40000이므로 완전탐색으로는 해결 불가능
 ## 코드
 
 ```C++
-    #include <iostream>
-    #include <vector>
-    using namespace std;
-    int n, m, k;
-    long long ans;
-    vector<int> go(vector<int> v) {
-        vector<int> ret(v.size() + 1);
-        int i = 0;
-        while (i < v.size()) {
-            if (!v[i]) {
-                i++;
-                continue;
-            }
-            int j = i;
-            while (j < v.size() && v[j]) j++;
-            for (int a = 1; a <= j - i; a++)
-                ret[a] += j - i - a + 1;
-            i = j;
+#include <iostream>
+#include <vector>
+using namespace std;
+int n, m, k;
+long long ans;
+vector<int> go(vector<int> v) {
+    vector<int> ret(v.size() + 1);
+    int i = 0;
+    while (i < v.size()) {
+        if (!v[i]) {
+            i++;
+            continue;
         }
-        return ret;
+        int j = i;
+        while (j < v.size() && v[j]) j++;
+        for (int a = 1; a <= j - i; a++)
+            ret[a] += j - i - a + 1;
+        i = j;
     }
-    int main() {
-        scanf("%d %d %d", &n, &m, &k);
-        vector<int> N(n), M(m);
-        for (int i = 0; i < n; i++) scanf("%d", &N[i]);
-        for (int i = 0; i < m; i++) scanf("%d", &M[i]);
-        auto res_n = go(N), res_m = go(M);
-        for (int i = 1; i < res_n.size(); i++)
-            if (!(k % i) && k / i <= m) ans += (long long)res_n[i] * res_m[k / i];
-        printf("%lld", ans);
-        return 0;
-    }
+    return ret;
+}
+int main() {
+    scanf("%d %d %d", &n, &m, &k);
+    vector<int> N(n), M(m);
+    for (int i = 0; i < n; i++) scanf("%d", &N[i]);
+    for (int i = 0; i < m; i++) scanf("%d", &M[i]);
+    auto res_n = go(N), res_m = go(M);
+    for (int i = 1; i < res_n.size(); i++)
+        if (!(k % i) && k / i <= m) ans += (long long)res_n[i] * res_m[k / i];
+    printf("%lld", ans);
+    return 0;
+}
 ```
