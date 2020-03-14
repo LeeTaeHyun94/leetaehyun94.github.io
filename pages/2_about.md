@@ -21,7 +21,7 @@ See my project page for details.
 
 ### 1. Education
 
-- 2013.03 ~ 2020.02 : bachelor's degree in Computer Information Engineering (The Catholic University of Korea)
+- 2013.03 ~ 2020.02 : Bachelor's degree in Computer Information Engineering (The Catholic University of Korea)
 
 ### 2. Career
 
