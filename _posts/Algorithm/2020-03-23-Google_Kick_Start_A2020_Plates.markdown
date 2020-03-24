@@ -2,7 +2,7 @@
 layout: post
 title:  "[Google Kick Start - Round A 2020] Plates"
 description:  "[Google Kick Start - Round A 2020] Plates"
-date:   2020-03-22 18:30:00
+date:   2020-03-23 18:30:00
 categories: Algorithm
 comments: true
 ---
