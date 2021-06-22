@@ -11,67 +11,85 @@ permalink: /about/
 
 - Name : Tae-hyun Lee
 - Email : leethw@naver.com
-- Github : https://github.com/LeeTaeHyun94
 - Blog : https://leetaehyun94.github.io
+- Github : https://github.com/LeeTaeHyun94
+- LinkedIn : https://linkedin.com/in/leethyun
 - Get My Portfolio! : [leethyun's Portfolio](./../downloads/leethyun's Portfolio v2.pdf)
 
-My primary research interest is in Software Engineering, Back-end and Algorithm.
+My primary research interest is in Back-end Engineering and Algorithm.
 
 See my project page for details.
 
-### 1. Education
+### 1. Career
+
+- 2020.03.30 ~ ing : Backend Engineer in Coupang
+- 2019.06.24 ~ 2019.08.09 : Software Engineer in Samsung Electronics Mobile Communications (Internship)
+- 2019.01 ~ 2019.02.28 : Software Engineer in Bearrobotics
+- 2018.09 ~ 2019.01 : Research Assistant in Algorithm lab. (The Catholic University of Korea)
+- 2016.12 ~ 2017.12 : Research Assistant in Intelligent System lab. (The Catholic University of Korea)
+
+### 2. Skill & Experience
+
+- Main Skill
+  - Back-End
+    - Spring / Spring boot
+      - Hibernate / JPA
+      - QueryDSL
+      - HikariCP
+      - Build Tool : Gradle
+    - Kafka
+    - Jenkins
+    - Docker, docker-compose
+    - Apache Spark with Java
+      - Spark RDD
+  - Database
+    - MySQL
+    - Cassandra
+    - HBase
+  - Infra
+    - Apache Hive
+    - Amazon Web Service
+  - Algorithm (Problem Solving)
+    - C, C++
+    - Data Structure
+    - BOJ : leethyun
+    - Algospot : leet
+
+- Experience
+  - Back-End
+    - Java
+    - JSP & Servlet
+    - Spring
+      - DBCP
+      - Maven
+      - MyBatis
+    - C#
+    - Node.JS
+      - Express Framework
+      - mongoose
+    - Django
+  - Front-End
+    - C# & WPF
+    - Bootstrap (HTML + JQuery + Javascript)
+    - React
+      - MobX
+      - Material-UI
+      - axios
+    - Android (Java)
+  - Database
+    - Oracle DBMS
+    - mongoDB
+    - SQLite3
+    - Riak-KV
+  - Infra
+    - Consul
+    - Google Cloud Platform
+    - Phabricator
+      - arc
+
+### 3. Education
 
 - 2013.03 ~ 2020.02 : Bachelor's degree in Computer Information Engineering (The Catholic University of Korea)
-
-### 2. Career
-
-- 2016.12 ~ 2017.12 : Research Assistant in Intelligent System lab. (The Catholic University of Korea)
-- 2018.09 ~ 2019.01 : Research Assistant in Algorithm lab. (The Catholic University of Korea)
-- 2019.01 ~ 2019.02.28 : Software Engineer in Bearrobotics
-- 2019.06.24 ~ 2019.08.09 : Software Engineer in Samsung Electronics Mobile Communications (Internship)
-
-### 3. Skill
-
-- Back-End
-  - Java
-  - JSP & Servlet
-  - Spring / Spring boot
-    - Hibernate / SpringDataJPA
-    - MyBatis
-    - Build Tool : Maven / Gradle
-  - C#
-  - Node.JS
-    - Express Framework
-    - mongoose
-  - Django
-- Front-End
-  - C# & WPF
-  - Bootstrap (HTML + JQuery + Javascript)
-  - React
-    - MobX
-    - Material-UI
-    - axios
-  - Android (Java)
-- Database
-  - MySQL
-  - Oracle DBMS
-  - mongoDB
-  - SQLite3
-  - Riak-KV
-- Infra
-  - Docker
-  - Consul
-  - Amazon Web Service
-  - Google Cloud Platform
-  - Phabricator
-    - arc
-- Algorithm (Problem Solving)
-  - C, C++
-  - Data Structure
-  - BOJ : leethyun
-  - Algospot : leet
-- Concepts
-  - OOA, OOD, TDD, UML, Design Patterns, Networking
 
 ### 4. Awards & Antecedents
 
