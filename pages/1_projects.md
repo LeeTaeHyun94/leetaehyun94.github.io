@@ -13,7 +13,7 @@ permalink: /projects/
 [Project Portfolio](./../downloads/leethyun's Portfolio v2.pdf)
 
 ## Calcium Project (First step of Modernization for legacy project)
-* 2020.03 ~ 2020.04
+* 2020.03 ~ 2020.06
 * Skeleton Project Based on Spring Boot (Boilerplate for Coupang Infra system)
 * Save the time spended for Base Project Settings
 * Multi-module Project
