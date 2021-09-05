@@ -14,7 +14,7 @@ permalink: /about/
 - Blog : https://leetaehyun94.github.io
 - Github : https://github.com/LeeTaeHyun94
 - LinkedIn : https://linkedin.com/in/leethyun
-- Get My Portfolio! : [leethyun's Portfolio](./../downloads/leethyun's Portfolio v2.pdf)
+- Get My Portfolio! : [leethyun's Portfolio](./../downloads/leethyun_portfolio_v3.pdf)
 
 My primary research interest is in Back-end Engineering and Algorithm.
 
@@ -22,7 +22,8 @@ See my project page for details.
 
 ### 1. Career
 
-- 2020.03.30 ~ ing : Backend Engineer in Coupang
+- 2021.08.23 ~ ing : Server Developer in Toss Securities
+- 2020.03.30 ~ 2021.08.13 : Backend Engineer in Coupang
 - 2019.06.24 ~ 2019.08.09 : Software Engineer in Samsung Electronics Mobile Communications (Internship)
 - 2019.01 ~ 2019.02.28 : Software Engineer in Bearrobotics
 - 2018.09 ~ 2019.01 : Research Assistant in Algorithm lab. (The Catholic University of Korea)
